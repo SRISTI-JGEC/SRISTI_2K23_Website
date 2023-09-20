@@ -15,8 +15,15 @@ function page() {
         src="/team-bg.jpg"
       />
       <div className="flex flex-col items-center pb-10 text-white">
-        <h1 className="text-center font-bold text-5xl lg:text-6xl pt-10 pb-5">
+        <h1 className="text-center font-bold text-3xl lg:text-6xl pt-10 lg:pb-5">
           Our Team
+          <Image
+            alt=""
+            height={300}
+            width={300}
+            className="w-48 lg:w-full"
+            src={`/underline-wand.png`}
+          />
         </h1>
 
         <TeachersTeam />
