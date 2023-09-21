@@ -13,7 +13,7 @@ type TimeLeft = {
   seconds: number;
 };
 
-const page: React.FC = () => {
+const Events = () => {
   const eventStartTime = new Date("Oct 3, 2023 12:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -142,4 +142,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default Events;
