@@ -12,7 +12,7 @@
 /* Scrollbar Track */
 ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
-    background-color: #2F4865; /* Background color of the scrollbar track */
+    background-color: rgb(31 41 55 / 0.4);/* Background color of the scrollbar track */
   }
   
   /* Scrollbar Thumb */
