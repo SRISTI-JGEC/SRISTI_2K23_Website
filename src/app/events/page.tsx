@@ -1,3 +1,4 @@
+import Sponsors from '@/components/Sponsors'
 import EventCard from '@/components/events-page/EventCard'
 import Image from 'next/image'
 
@@ -53,7 +54,7 @@ const page = () => {
         <div className='relative text-white'>
             <div className='p-20 md:px-64 text-center w-fit text-6xl font-semibold'>
                 <p>Events</p>
-                <Image 
+                <Image
                 src={'/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png'} 
                 alt={'something'}
                 width={300}
