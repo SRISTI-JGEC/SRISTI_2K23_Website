@@ -3,8 +3,26 @@
 @tailwind utilities;
 @import url("https://fonts.cdnfonts.com/css/harry-p");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Oswald&family=Poppins&family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 
 /* *::-webkit-scrollbar{
     scroll-behavior: smooth;
     display: none;
 } */
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    background-color: #2F4865; /* Background color of the scrollbar track */
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #CDC8C9; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  /* On hover, make the scrollbar thumb darker */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  

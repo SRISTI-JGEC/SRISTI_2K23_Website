@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} scrollbar-thin scrollbar-thumb-blue-100 scrollbar-track-gray-500`}>
+      <body className={`${inter.className}`}>
         <NavBar />
         {children}
       </body>

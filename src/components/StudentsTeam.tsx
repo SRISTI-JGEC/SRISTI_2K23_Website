@@ -72,7 +72,7 @@ const studentsDetails = [
     name: "Joydev Karmakar",
     designation: "Logistics Head ",
     imgLink:
-      "https://drive.google.com/uc?export=view&id=1v9WvPDeTEOR-uTXPy-_PopplvAaqHzNQ",
+      "https://drive.google.com/uc?export=view&id=1fqHqxpt9LANAfxWv3AObGv-qylbRkG_t",
   },
   {
     name: "Arkamitra Ghosh",

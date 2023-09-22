@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <>
-      <div className="w-full h-20 bg-gray-800/40 backdrop-blur-md fixed top-0 z-40 flex justify-between items-center px-12 text-white font-harry">
+      <div className="w-full h-20 bg-gray-800/40 backdrop-blur-md fixed top-0 z-40 flex justify-between items-center px-12 text-white font-griffy">
         <div>
           <img src="Images/Sristi 3.png" alt="logo" className="h-16 object-contain" />
         </div>
