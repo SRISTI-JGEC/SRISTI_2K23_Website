@@ -19,6 +19,8 @@ const config: Config = {
       poppins: ["Poppins", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+],
 };
 export default config;
