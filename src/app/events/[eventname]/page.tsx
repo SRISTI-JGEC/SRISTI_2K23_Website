@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import stick from "/public/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png";
+import Link from "next/link";
 // import ruleBg from "/public/Images/Untitled-2.png";
 
 type TimeLeft = {
@@ -45,7 +46,7 @@ const Page = () => {
       <div className="min-h-screen">
         <div className="relative min-h-screen p-10 flex justify-start items-center flex-col bg-center bg-cover bg-no-repeat">
           <div className="p-[10px] flex flex-col items-start">
-            <div className="font-harry text-[2.7rem] text-white tracking-wider">
+            <div className="font-harry text-[2.7rem] text-white tracking-wider mt-12">
               Mesmarise
             </div>
             <Image src={stick} alt="stick" className="w-[10rem] my-[-10px]" />
@@ -154,9 +155,9 @@ const Page = () => {
             <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-harry text-[1.5rem] tracking-wider">
               Register Now
             </button>
-            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-harry text-[1.5rem] tracking-wider">
+            <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-harry text-[1.5rem] tracking-wider">
               Leatherboard
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

@@ -3,77 +3,125 @@ import Image from "../../node_modules/next/image";
 
 const studentsDetails = [
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Uttaran Kundu",
+    designation: "Chief Coordinator ",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Soham Chakraborty",
+    designation: "Chief Coordinator ",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1NBPnwHXbQz1xfAa0U_9AFeZjTZxE-xiV",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Shakil Ahmed ",
+    designation: "Event Management Head",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1PC6JGZp5H1eMGHByFvyWak99ElKPeNZY",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Soumyadip Maiti",
+    designation: "Event Management Head",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1eZkHbywegasrNFfZA15LI3AparAiaBFS",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Aakanksha Mishra ",
+    designation: "Event Management Head",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1G28b6TptxHuvG9-13BFHQtHqX9s2uxSY",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Purba Kundu ",
+    designation: "Event Management Head",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1KPHrqhFJxmd5c7Lvuk5rGkDrpRGwAUqz",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Shreya Dandapat",
+    designation: "Treasurer",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Anupam Sinha ",
+    designation: "Treasurer",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1U8mVSyV-kQI6XEpOeQvWKF53hnQugxdT",
   },
   {
-    name: "Loren Ipsum",
-    designation: "Design Head",
+    name: "Soumyadip Manna",
+    designation: "Treasurer",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1vDTEghnpz1PwtSmKP-jMpp8CVQyekhHE",
   },
   {
-    name: "Loren Ipsum",
+    name: "Abhgyan Prakash Singh",
+    designation: "Treasurer",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+  },
+  {
+    name: "Sumit Mazumdar ",
+    designation: "Logistics Head ",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1v9WvPDeTEOR-uTXPy-_PopplvAaqHzNQ",
+  },
+  {
+    name: "Joydev Karmakar",
+    designation: "Logistics Head ",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1v9WvPDeTEOR-uTXPy-_PopplvAaqHzNQ",
+  },
+  {
+    name: "Arkamitra Ghosh",
     designation: "Design Head",
     imgLink:
-      "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
+      "https://drive.google.com/uc?export=view&id=1JudDkpqDz9LSFbA0G2awHeTCyfZmSCfl",
+  },
+  {
+    name: "Swadesh Pal",
+    designation: "Web Lead",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1SDP4-RQbVeshsQbxe4Uyii-VetTBLSZe",
+  },
+  {
+    name: "Saptaparna Sen",
+    designation: "Outreach Team",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1FVdXsIRqeLXE3RDf7v-IRrkoIiflsnKI",
+  },
+  {
+    name: "Dhiraj Thakur ",
+    designation: "Outreach Team",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1WQDqH4Kp-oi6XPM49o9gO59vao1j0Smr",
+  },
+  {
+    name: "Apratim Banerjee",
+    designation: "Outreach Team",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1KihIqWqM1mwz3uRRlC0e_KcUV8jGOYt9",
+  },
+  {
+    name: "Parmita Saha",
+    designation: "Social Media Head",
+    imgLink:
+      "https://drive.google.com/uc?export=view&id=1pqLF_60xyZ4NfQHOoFMgDj_3ECfcYwmg",
   },
 ];
 
 function StudentsTeam() {
   return (
     <div className="w-full">
-      <h1 className="text-center flex flex-col items-center text-2xl lg:text-5xl pb-10">
+      <h1 className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8">
         Students Team
         <Image
           alt=""
-          height={300}
-          width={300}
-          className="w-44 lg:w-96"
+          height={200}
+          width={200}
+          className="w-36 lg:w-60"
           src={`/underline-wand.png`}
         />
       </h1>
@@ -91,12 +139,14 @@ function StudentsTeam() {
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full p-1 mx-auto  h-32 w-32 sm:w-44 sm:h-44 "
+                  className="rounded-full p-1 mx-auto  h-32 w-32 sm:w-44 sm:h-44 object-cover"
                 />
               </div>
               <div>
-                <p className="text-center font-bold">{details.name}</p>
-                <p className="text-center">{details.designation}</p>
+                <p className="text-center font-bold sm:text-lg">{details.name}</p>
+                <p className="text-center max-sm:text-sm">
+                  {details.designation}
+                </p>
               </div>
             </div>
           ))}

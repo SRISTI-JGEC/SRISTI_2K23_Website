@@ -14,8 +14,8 @@ function page() {
         className="-z-10 fixed inset-0 w-full h-full object-cover"
         src="/team-bg.jpg"
       />
-      <div className="flex flex-col items-center pb-10 text-white">
-        <h1 className="text-center font-bold text-3xl lg:text-6xl pt-10 lg:pb-5">
+      <div className="flex flex-col items-center mt-24 text-white">
+        <h1 className="text-center font-bold text-3xl lg:text-6xl ">
           Our Team
           <Image
             alt=""
@@ -25,7 +25,6 @@ function page() {
             src={`/underline-wand.png`}
           />
         </h1>
-
         <TeachersTeam />
         <StudentsTeam />
       </div>

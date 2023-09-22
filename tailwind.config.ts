@@ -12,6 +12,8 @@ const config: Config = {
         "event-back-image":
           "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/Images/events-bg.jpg')",
         "rule-bg": "url('/Images/Untitled-2.png')",
+        leaderboard_Image: "url('/Images/leaderboard.jpg')",
+        home_bg: "url('/Images/home.jpg')",
       },
     },
     fontFamily: {
