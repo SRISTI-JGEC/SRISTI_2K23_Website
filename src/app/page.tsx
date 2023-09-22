@@ -89,14 +89,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="m-10 md:mt-10">
-              <Image
-                src="/Images/Sristi3.png"
-                alt="something"
-                width={450}
-                height={450}
-              />
             </div>
+
           </div>
         </div>
  
