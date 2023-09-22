@@ -1,3 +1,5 @@
+import Reviews from '@/components/Reviews'
+import Sponsors from '@/components/Sponsors'
 import Image from 'next/image'
 
 export default function Home() {
