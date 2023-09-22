@@ -8,38 +8,44 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
 
 const Reviews = () => {
-    const array = [{}, {}, {}, {}, {}, {}]
+    
   return (
     <div style={{ backgroundImage: 'url(/Images/43.harry-potter-following-the-darkness-4k-tp.jpg)', backgroundSize: 'cover',}} 
-    className="h-screen text-white flex flex-col items-center">
-        <div className="text-6xl px-28 p-16 font-medium">
+    className="h-screen text-white">
+        <div className="text-4xl md:text-6xl px-28 text-center md:text-start p-16 font-medium font-harry">
             Reviews
             <Image
             src='/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png'
             alt={'something'}
             width={300}
             height={300}
-            className="h-8 mt-2"
+            className="md:h-8 mt-2"
             />
         </div>
-        <div className="w-3/4">
+        <div className="w-full flex items-center">
             <Swiper
             effect={"coverflow"}
             grabCursor={true}
-            slidesPerView={2}
+            slidesPerView={1}
             navigation={true}
             spaceBetween={20}
             pagination={true}
-            className="mySwiper"
+            className="mySwiper w-4/5 md:w-2/3 overflow-hidden"
+            breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                }
+              }}
             scrollbar={{
                 el: ".swiper-scrollbar",
                 hide: true,
             }}
             >
                 {
-                    array.map((obj, index)=>(
+                    [1, 2, 3, 4, 5].map((obj, index)=>(
                     <SwiperSlide key={index} className="">
                         <Image
                         src={'/Images/Untitled-2.png'} 
