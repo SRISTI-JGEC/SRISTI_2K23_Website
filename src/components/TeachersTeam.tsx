@@ -4,51 +4,51 @@ import Image from "../../node_modules/next/image";
 function TeachersTeam() {
   const teachersDetails = [
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Prof. Subranta Roy Choudhury",
+      designation: "Chairman",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Dr. Santanu Das",
+      designation: "Member",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Dr. Dipak Kumar Kole",
+      designation: "Member",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Dr. Jishan Mahedi",
+      designation: "Member",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Prof. Debjyoti Chatterjee",
+      designation: "Member",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
     {
-      name: "Loren Ipsum",
-      designation: "Design Head",
+      name: "Mr. Vivekananda Biswas",
+      designation: "Converner",
       imgLink:
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
   ];
   return (
     <div className="w-full">
-      <h1 className="text-center flex flex-col items-center text-2xl lg:text-5xl p-10 pb-16 ">
+      <h1 className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8">
         Teachers Team
         <Image
           alt=""
-          height={300}
-          width={300}
-          className="w-44 lg:w-96"
+          height={200}
+          width={200}
+          className="w-36 lg:w-60"
           src={`/underline-wand.png`}
         />
       </h1>
@@ -60,7 +60,7 @@ function TeachersTeam() {
               className="flex flex-col items-center justify-start w-36 h-56 sm:w-44 sm:h-72 gap-4 "
             >
               <div className="relative ">
-                <Image
+                <img
                   height={150}
                   width={150}
                   src={details.imgLink}
