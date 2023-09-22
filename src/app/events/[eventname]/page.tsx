@@ -42,6 +42,7 @@ const Page = () => {
         width={1000}
         height={1000}
         className="-z-10 fixed inset-0 w-full h-full object-cover"
+        draggable={false}
       />
       <div className="min-h-screen">
         <div className="relative min-h-screen p-10 flex justify-start items-center flex-col bg-center bg-cover bg-no-repeat">
@@ -49,7 +50,7 @@ const Page = () => {
             <div className="font-griffy text-[2.7rem] text-white tracking-wider mt-12">
               Mesmarise
             </div>
-            <Image src={stick} alt="stick" className="w-[10rem] my-[-10px]" />
+            <Image src={stick} alt="stick" className="w-[10rem] my-[-10px]" draggable={false} />
           </div>
           <div className="relative my-[2rem] flex justify-between items-center p-[2rem] bg-[rgba(0,0,0,0.4)] backdrop-blur-[5px] rounded-[7px] w-[90%] max-[640px]:flex-col max-[640px]:w-[100%] max-[640px]:p-4 max-[640px]:justify-start">
             <div className="relative flex items-center max-[640px]:h-[10rem] max-[640px]:mb-[30px]">
@@ -61,7 +62,7 @@ const Page = () => {
               <div className="font-griffy text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem]">
                 Rules
               </div>
-              <Image src={stick} alt="stick" className="w-[5rem] my-[-7px]" />
+              <Image src={stick} alt="stick" className="w-[5rem] my-[-7px]" draggable={false} />
             </div>
           </div>
         </div>
@@ -70,7 +71,7 @@ const Page = () => {
             <div className="font-griffy text-[2.7rem] text-white tracking-wide max-[280px]:text-[2rem]">
               Event Leaders
             </div>
-            <Image src={stick} alt="stick" className="w-[13.5rem] my-[-10px]" />
+            <Image src={stick} alt="stick" className="w-[13.5rem] my-[-10px]" draggable={false} />
           </div>
           <div className="my-[2rem] flex flex-col justify-center items-center w-[80%] max-[640px]:w-[90%]">
             <div className="flex justify-between items-center w-[100%] mb-5 max-[640px]:flex-col">
@@ -156,7 +157,7 @@ const Page = () => {
               Register Now
             </button>
             <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
-              Leatherboard
+              Leader Board
             </button></Link>
           </div>
         </div>

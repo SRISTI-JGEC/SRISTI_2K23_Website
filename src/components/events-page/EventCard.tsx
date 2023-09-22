@@ -12,7 +12,7 @@ interface EventCardProps {
 const EventCard = ({props}: {props: EventCardProps}) => {
   return (
     <div className={`w-full h-full overflow-hidden flex flex-col md:flex-row items-center my-3 ${props.inverted ? "md:flex-row-reverse" : ""}`}>
-        <Image src={props.image} alt={"batch-image"} width={300} height={300}
+        <Image src={props.image} alt={"batch-image"} width={300} height={300} draggable={false}
         className={`object-cover relative z-10 ${ props.inverted ? "md:right-44" : "md:left-44"}`}/>
         <div className="md:w-full bg-black/30 hover:bg-black/40 transition-all duration-150 backdrop-blur-sm md:h-[16rem] rounded-md p-5 md:p-7 md:px-36">
             <p className="text-4xl text-center md:text-start font-semibold  ps-4">{props.category} :</p>

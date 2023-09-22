@@ -15,6 +15,7 @@ export default function Home() {
                 alt="Sristi Logo"
                 width={400}
                 height={300}
+                draggable={false}
               />
             </div>
             <div className="flex flex-col items-center">
@@ -25,6 +26,7 @@ export default function Home() {
                   alt="something"
                   width={400}
                   height={200}
+                  draggable={false}
                 />
               </div>
               <div className="relative bottom-10">
@@ -33,6 +35,7 @@ export default function Home() {
                   alt="Broom"
                   width={450}
                   height={250}
+                  draggable={false}
                 />
               </div>
               <div className="ml-20 relative bottom-20 right-5">
@@ -41,6 +44,7 @@ export default function Home() {
                   alt="something"
                   width={250}
                   height={150}
+                  draggable={false}
                 />
               </div>
             </div>
@@ -63,11 +67,12 @@ export default function Home() {
                   alt="something"
                   width={600}
                   height={600}
+                  draggable={false}
                 />
                 <div className="absolute top-0 text-[#e4e4e4] w-[80%] mt-8">
                   <div className="my-4 flex justify-center items-center flex-col">
                     <h1 className="capitalize text-3xl text-white font-semibold ">
-                      about
+                      About
                     </h1>
                     <Image
                       src="/underline-wand.png"
@@ -75,6 +80,7 @@ export default function Home() {
                       width={100}
                       height={200}
                       className=""
+                      draggable={false}
                     />
                   </div>
                   <p className="text-lg">

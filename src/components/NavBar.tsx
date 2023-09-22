@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className="w-full h-20 bg-gray-800/40 backdrop-blur-md fixed top-0 z-40 flex justify-between items-center px-12 text-white font-griffy">
         <div>
         <Link href={"/"}>
-          <Image src="/Images/Sristi 3.png" alt="logo" width={100} height={100} />
+          <Image src="/Images/Sristi 3.png" alt="logo" width={100} height={100} draggable={false}/>
           </Link>
         </div>
         <ul className="flex justify-center items-center text-xl">

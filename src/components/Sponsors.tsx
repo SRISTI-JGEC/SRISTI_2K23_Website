@@ -13,6 +13,7 @@ const Sponsors = () => {
           width={300}
           height={300}
           className="h-5 md:h-8 mt-2"
+          draggable={false}
         />
         <div className="flex flex-col md:flex-row justify-between items-center w-full gap-y-24 md:gap-y-0 mt-20">
           <div>
@@ -22,6 +23,7 @@ const Sponsors = () => {
               width={600}
               height={600}
               className=""
+              draggable={false}
             />
           </div>
           <div>

@@ -26,3 +26,6 @@
     background-color: #555;
   }
   
+  body {
+    user-select: none;
+  }
