@@ -65,14 +65,19 @@ export default function Home() {
                 className="z-40"
               />
             </div>
-            <div className="m-5">
-              <Image
-                src="/block.png"
-                alt="something"
-                width={600}
-                height={600}
-              />
+            <div className="m-5 relative">
+              <div className="w-96 h-96 relative">
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-[url('/block.png')] overflow-y-auto scrollbar scrollbar-none "
+                ><div className="absolute top-0 left-0 text-white p-4 z-10">
+                    <h2 className="text-3xl font-semibold">Your Text Here</h2>
+                    <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                  </div></div>
+
+              </div>
             </div>
+
           </div>
           <div className="m-10 md:mt-10">
             <Image
