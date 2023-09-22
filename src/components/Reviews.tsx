@@ -13,7 +13,7 @@ import "swiper/css/effect-fade";
 const Reviews = () => {
   return (
     <div className="h-screen text-white">
-      <div className="text-4xl md:text-6xl px-28 text-center md:text-start p-16 font-medium font-harry">
+      <div className="text-4xl md:text-6xl px-28 text-center md:text-start p-16 font-medium font-griffy">
         Reviews
         <Image
           src="/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png"

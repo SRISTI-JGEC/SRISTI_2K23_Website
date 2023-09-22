@@ -46,7 +46,7 @@ const Page = () => {
       <div className="min-h-screen">
         <div className="relative min-h-screen p-10 flex justify-start items-center flex-col bg-center bg-cover bg-no-repeat">
           <div className="p-[10px] flex flex-col items-start">
-            <div className="font-harry text-[2.7rem] text-white tracking-wider mt-12">
+            <div className="font-griffy text-[2.7rem] text-white tracking-wider mt-12">
               Mesmarise
             </div>
             <Image src={stick} alt="stick" className="w-[10rem] my-[-10px]" />
@@ -58,7 +58,7 @@ const Page = () => {
               </video>
             </div>
             <div className="relative min-h-[25rem] bg-rule-bg bg-no-repeat bg-cover bg-center min-w-[45%] flex flex-col items-center justify-start max-[640px]:w-[100%] max-[640px]:min-h-[20rem]">
-              <div className="font-harry text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem]">
+              <div className="font-griffy text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem]">
                 Rules
               </div>
               <Image src={stick} alt="stick" className="w-[5rem] my-[-7px]" />
@@ -67,7 +67,7 @@ const Page = () => {
         </div>
         <div className=" min-h-screen p-10 flex justify-center items-center flex-col bg-center bg-cover bg-no-repeat">
           <div className="p-[10px] flex flex-col">
-            <div className="font-harry text-[2.7rem] text-white tracking-wide max-[280px]:text-[2rem]">
+            <div className="font-griffy text-[2.7rem] text-white tracking-wide max-[280px]:text-[2rem]">
               Event Leaders
             </div>
             <Image src={stick} alt="stick" className="w-[13.5rem] my-[-10px]" />
@@ -115,13 +115,13 @@ const Page = () => {
           </div>
         </div>
         <div className="event-timing min-h-[60vh] flex flex-col items-center justify-start w-full text-white p-10 bg-center bg-cover bg-no-repeat">
-          <h2 className="text-[3rem] font-harry max-[640px]:text-[2rem] max-[280px]:text-[1rem]">
+          <h2 className="text-[3rem] font-griffy max-[640px]:text-[2rem] max-[280px]:text-[1rem]">
             Venue: Auditorium Hall
           </h2>
-          <h1 className="text-[5rem] font-harry tracking-wider max-[640px]:text-[2.7rem] text-center max-[280px]:text-[1.5rem]">
+          <h1 className="text-[5rem] font-griffy tracking-wider max-[640px]:text-[2.7rem] text-center max-[280px]:text-[1.5rem]">
             we are starting soon
           </h1>
-          <div className="timer flex w-[50rem] justify-between my-[3rem] items-center font-harry max-[640px]:w-[90%]">
+          <div className="timer flex w-[50rem] justify-between my-[3rem] items-center font-griffy max-[640px]:w-[90%]">
             <div className="days bg-[rgba(0,0,0,0.4)] px-[50px] py-[10px] max-[640px]:px-[10px] max-[640px]:py-[3px] backdrop-blur-[10px]">
               <p className="text-7xl max-[640px]:text-[16px]">
                 {timeLeft.days}
@@ -152,10 +152,10 @@ const Page = () => {
             </div>
           </div>
           <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem]">
-            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-harry text-[1.5rem] tracking-wider">
+            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
               Register Now
             </button>
-            <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-harry text-[1.5rem] tracking-wider">
+            <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
               Leatherboard
             </button></Link>
           </div>
