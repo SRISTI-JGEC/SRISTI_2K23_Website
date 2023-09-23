@@ -3,21 +3,24 @@ import React, { useState, Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { BiUser } from "react-icons/bi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  MdOutlineAlternateEmail,
-  MdNumbers,
-  MdOutlineSchool,
-} from "react-icons/md";
-import { HiPhone } from "react-icons/hi";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { LiaMoneyBillAlt } from "react-icons/lia";
-import { BsCheckLg, BsChevronExpand } from "react-icons/bs";
-import { RiNumbersLine } from "react-icons/ri";
+  faUser,
+  faAt,
+  faPhone,
+  faGraduationCap,
+  faChevronDown,
+  faCheck,
+  faChartSimple,
+  faHashtag,
+  faMoneyBill1,
+  faEye,
+  faEyeSlash,
+} from "@fortawesome/free-solid-svg-icons";
 
 // *--------------------- Variable for selecting department and year --------------------------------------;
 const department = ["CE", "ME", "EE", "ECE", "CSE", "IT"];
-const year = ["1st", "2nd"];
+const year = ["1st Year", "2nd Year"];
 
 //* ---------------------- Type for the userfields -------------------------------------------------------;
 type UserFields = {
@@ -82,7 +85,10 @@ const Page = () => {
           </h1>
           <form className="flex justify-between items-center w-full flex-col">
             <div className="username flex justify-between items-center w-full my-1 border-b-2 border-b-white border-solid">
-              <BiUser className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faUser}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <input
                 type="text"
                 placeholder="Username"
@@ -94,7 +100,10 @@ const Page = () => {
               />
             </div>
             <div className="email flex justify-between items-center w-full my-1 border-b-2 border-b-white border-solid">
-              <MdOutlineAlternateEmail className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faAt}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <input
                 type="email"
                 placeholder="Email"
@@ -106,7 +115,10 @@ const Page = () => {
               />
             </div>
             <div className="mobile flex justify-between items-center w-full my-1 border-b-2 border-b-white border-solid">
-              <HiPhone className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <input
                 type="text"
                 placeholder="Mobile No"
@@ -118,13 +130,17 @@ const Page = () => {
               />
             </div>
             <div className="dept flex justify-between items-center w-full text-black my-1 border-b-2 border-b-white border-solid">
-              <MdOutlineSchool className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faGraduationCap}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <Listbox value={selectdept} onChange={setSelectdept}>
                 <div className="relative mt-1 w-full">
                   <Listbox.Button className="relative w-full cursor-default rounded-sm bg-none px-5 py-3 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm text-white ">
                     <span className="block truncate">{selectdept}</span>
                     <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                      <BsChevronExpand
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
                         className="h-5 w-5 text-gray-400"
                         aria-hidden="true"
                       />
@@ -160,7 +176,8 @@ const Page = () => {
                               </span>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
-                                  <BsCheckLg
+                                  <FontAwesomeIcon
+                                    icon={faCheck}
                                     className="h-5 w-5"
                                     aria-hidden="true"
                                   />
@@ -176,13 +193,17 @@ const Page = () => {
               </Listbox>
             </div>
             <div className="year flex justify-between items-center w-full text-black my-1 border-b-2 border-b-white border-solid">
-              <RiNumbersLine className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faChartSimple}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <Listbox value={selectyear} onChange={setSelectyear}>
                 <div className="relative mt-1 w-full">
                   <Listbox.Button className="relative w-full cursor-default rounded-sm bg-none px-5 py-3 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm text-white">
                     <span className="block truncate">{selectyear}</span>
                     <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                      <BsChevronExpand
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
                         className="h-5 w-5 text-gray-400"
                         aria-hidden="true"
                       />
@@ -218,7 +239,8 @@ const Page = () => {
                               </span>
                               {selected ? (
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
-                                  <BsCheckLg
+                                  <FontAwesomeIcon
+                                    icon={faCheck}
                                     className="h-5 w-5"
                                     aria-hidden="true"
                                   />
@@ -234,7 +256,10 @@ const Page = () => {
               </Listbox>
             </div>
             <div className="rollno flex justify-between items-center w-full my-1 border-b-2 border-b-white border-solid">
-              <MdNumbers className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faHashtag}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <input
                 type="string"
                 placeholder="Roll No"
@@ -246,7 +271,10 @@ const Page = () => {
               />
             </div>
             <div className="biil flex justify-between items-center w-full my-1 bg-transparent border-b-2 border-solid border-b-white">
-              <LiaMoneyBillAlt className="mr-2 cursor-pointer text-xl text-white" />
+              <FontAwesomeIcon
+                icon={faMoneyBill1}
+                className="mr-2 cursor-pointer text-xl text-white"
+              />
               <input
                 type="string"
                 placeholder="Bill No"
@@ -259,12 +287,14 @@ const Page = () => {
             </div>
             <div className="password flex justify-between items-center w-full my-1 bg-transparent border-b-2 border-solid border-b-white">
               {passwordview ? (
-                <AiOutlineEyeInvisible
+                <FontAwesomeIcon
+                  icon={faEye}
                   className="mr-2 cursor-pointer text-xl text-white"
                   onClick={handleViewChange}
                 />
               ) : (
-                <AiOutlineEye
+                <FontAwesomeIcon
+                  icon={faEyeSlash}
                   className="mr-2 cursor-pointer text-xl text-white"
                   onClick={handleViewChange}
                 />
