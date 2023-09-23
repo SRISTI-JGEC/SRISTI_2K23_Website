@@ -1,5 +1,7 @@
-import React from "react";
-import Image from "../../node_modules/next/image";
+"use client";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+import Image from "next/image";
 
 function TeachersTeam() {
   const teachersDetails = [
@@ -40,9 +42,26 @@ function TeachersTeam() {
         "https://previews.123rf.com/images/metelsky/metelsky1809/metelsky180900233/109815470-man-avatar-profile-male-face-icon-vector-illustration.jpg",
     },
   ];
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ opacity: 1, y: 0 });
+    }
+  }, [isInView]);
+
   return (
     <div className="w-full">
-      <h1 className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8">
+      <motion.h1
+        initial={{ opacity: 0, y: 75 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8"
+      >
         Teachers Team
         <Image
           alt=""
@@ -52,16 +71,22 @@ function TeachersTeam() {
           src={`/underline-wand.png`}
           draggable={false}
         />
-      </h1>
+      </motion.h1>
       <div>
-        <div className="flex max-w-[90rem] mx-auto justify-center items-center flex-wrap gap-x-5 sm:gap-x-20 pb-10 gap-y-4 lg:px-10">
+        <div
+          ref={ref}
+          className="flex max-w-[90rem] mx-auto justify-center items-center flex-wrap gap-x-5 sm:gap-x-20 pb-10 gap-y-4 lg:px-10"
+        >
           {teachersDetails.map((details, ind) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 75 }}
+              animate={mainControls}
+              transition={{ duration: 0.8, delay: 0.3 }}
               key={ind}
               className="flex flex-col items-center justify-start w-36 h-56 sm:w-44 sm:h-72 gap-4 "
             >
               <div className="relative ">
-                <img
+                <Image
                   height={150}
                   width={150}
                   src={details.imgLink}
@@ -73,7 +98,7 @@ function TeachersTeam() {
                 <p className="text-center font-bold">{details.name}</p>
                 <p className="text-center">{details.designation}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
