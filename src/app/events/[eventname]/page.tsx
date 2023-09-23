@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import stick from "/public/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 // import ruleBg from "/public/Images/Untitled-2.png";
 
 type TimeLeft = {
@@ -13,6 +14,7 @@ type TimeLeft = {
 };
 
 const Page = () => {
+  const router = useRouter()
   const eventStartTime = new Date("Oct 3, 2023 12:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -33,6 +35,12 @@ const Page = () => {
     setTimeLeft({ days, hours, minutes, seconds });
   }, 1000);
 
+  function handleSubmit() {
+    router.push('/registration')
+    
+  }
+  
+  
   return (
     <>
       <Image
@@ -153,7 +161,9 @@ const Page = () => {
             </div>
           </div>
           <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem]">
-            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider"
+              onClick={handleSubmit}
+            >
               Register Now
             </button>
             <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
