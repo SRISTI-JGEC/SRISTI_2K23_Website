@@ -123,6 +123,7 @@ function StudentsTeam() {
           width={200}
           className="w-36 lg:w-60"
           src={`/underline-wand.png`}
+          draggable={false}
         />
       </h1>
 
@@ -140,6 +141,7 @@ function StudentsTeam() {
                   src={details.imgLink}
                   alt={details.name}
                   className="rounded-full p-1 mx-auto  h-32 w-32 sm:w-44 sm:h-44 object-cover"
+                  draggable={false}
                 />
               </div>
               <div>

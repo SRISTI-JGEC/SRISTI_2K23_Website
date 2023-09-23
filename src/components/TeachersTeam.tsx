@@ -50,6 +50,7 @@ function TeachersTeam() {
           width={200}
           className="w-36 lg:w-60"
           src={`/underline-wand.png`}
+          draggable={false}
         />
       </h1>
       <div>

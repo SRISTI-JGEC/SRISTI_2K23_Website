@@ -66,6 +66,7 @@ const page = () => {
               alt={"something"}
               width={300}
               height={300}
+              draggable={false}
             />
           </div>
           {techeEvents.map((event, index) => (
