@@ -317,7 +317,7 @@ const Page = () => {
             </button>
           </form>
           <p>
-            Don't have an account yet?{" "}
+            Dont have an account yet?{" "}
             <Link href="/register" className="text-blue-300">
               Register
             </Link>
