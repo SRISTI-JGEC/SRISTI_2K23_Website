@@ -1,8 +1,11 @@
+"use client"
 import EventCard from "@/components/events-page/EventCard";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const techeEvents = [
   {
+    id: 1,
     category: "Robotics",
     events: [
       { name: "TECHZIBITION", link: "/events/hii" },
@@ -13,6 +16,7 @@ const techeEvents = [
     inverted: false,
   },
   {
+    id: 2,
     category: "Civilised",
     events: [
       { name: "BRIDGE-THE-GAP", link: "/events/" },
@@ -22,6 +26,7 @@ const techeEvents = [
     inverted: true,
   },
   {
+    id: 3,
     category: "Robotics",
     events: [
       { name: "TECHZIBITION", link: "/events/" },
@@ -32,6 +37,7 @@ const techeEvents = [
     inverted: false,
   },
   {
+    id: 4,
     category: "Civilised",
     events: [
       { name: "BRIDGE-THE-GAP", link: "/events/" },
@@ -41,6 +47,7 @@ const techeEvents = [
     inverted: true,
   },
   {
+    id: 5,
     category: "Robotics",
     events: [
       { name: "TECHZIBITION", link: "/events/" },
@@ -55,8 +62,9 @@ const techeEvents = [
 const page = () => {
   return (
     <>
-      <div className="h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
-        <div className="relative text-white">
+      <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
+        <motion.div
+        className="relative text-white mb-2">
           <div className=" flex justify-center items-center flex-col mt-24  text-center w-full text-6xl font-semibold">
             <p>Events</p>
             <Image
@@ -72,7 +80,7 @@ const page = () => {
           {techeEvents.map((event, index) => (
             <EventCard key={index} props={event} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
