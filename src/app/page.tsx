@@ -76,17 +76,17 @@ export default function Home() {
                 />
                 <div className="absolute top-0 text-[#e4e4e4] w-[80%] mt-4 sm:mt-8">
                   <p className="text-sm sm:text-lg">
-                    Welcome to Sristi, North Bengal's largest Techno-Management
-                    Fest!founded with a vision to inspire and nurture the
-                    leaders ,thinkers and creators of tomorrow, Sristi has
-                    evolved into the biggest annual event in the region. Our
-                    mission is to bridge the gap between academia and industry,
-                    offering a diverse range of competitions, workshops and
-                    networking opportunities.With expert speakers, an innovation
-                    hub,and a focus on learning and growth, Sristi is more than
-                    an event, it's a moment.Join us in celebrating innovation,
-                    collaboration and excellence at Sristi, where we engineer a
-                    brighter tomorrow!
+                    Welcome to Sristi, North Bengal&apos;s largest
+                    Techno-Management Fest!founded with a vision to inspire and
+                    nurture the leaders ,thinkers and creators of tomorrow,
+                    Sristi has evolved into the biggest annual event in the
+                    region. Our mission is to bridge the gap between academia
+                    and industry, offering a diverse range of competitions,
+                    workshops and networking opportunities.With expert speakers,
+                    an innovation hub,and a focus on learning and growth, Sristi
+                    is more than an event, it&apos;s a moment.Join us in
+                    celebrating innovation, collaboration and excellence at
+                    Sristi, where we engineer a brighter tomorrow!
                   </p>
                 </div>
               </div>

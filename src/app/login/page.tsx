@@ -1,27 +1,15 @@
 "use client";
 import React, { useState, Fragment } from "react";
-import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import {
-  faUser,
   faAt,
-  faPhone,
-  faGraduationCap,
-  faChevronDown,
-  faCheck,
-  faChartSimple,
-  faHashtag,
-  faMoneyBill1,
   faEye,
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-// *--------------------- Variable for selecting department and year --------------------------------------;
-const department = ["CE", "ME", "EE", "ECE", "CSE", "IT"];
-const year = ["1st Year", "2nd Year"];
 
 //* ---------------------- Type for the userfields -------------------------------------------------------;
 type UserFields = {
@@ -96,7 +84,7 @@ const Page = () => {
                 value={userFields.email}
                 onChange={handleChange}
               />
-            </div>  
+            </div>
             <div className="password flex justify-between items-center w-full my-1 bg-transparent border-b-2 border-solid border-b-white">
               {passwordview ? (
                 <FontAwesomeIcon
@@ -129,9 +117,9 @@ const Page = () => {
             </button>
           </form>
           <p>
-            Don't have an account yet?{" "}
+            Don&apos;t have an account yet?
             <Link href="/signup" className="text-blue-300 ">
-             sign up
+              sign up
             </Link>
           </p>
         </div>
