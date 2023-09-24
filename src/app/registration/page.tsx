@@ -1,9 +1,15 @@
 "use client"
 import Image from 'next/image';
+import { useRouter, useSearchParams } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Page = () => {
+  // Get query parameters from the URL
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  // Initialize React Hook Form
   const {
     register,
     handleSubmit,
@@ -31,6 +37,17 @@ const Page = () => {
     );
   }
 
+  // Get 'data' query parameter from the URL
+  const data = searchParams.get('data');
+
+  // Handle form submission
+  const onSubmit= async (data: any)=> {
+    console.log(data);
+    toast.success('Successfully Registered!')
+    setTimeout(() => {
+      router.push('/');
+    }, 2000);
+  }
 
   return (
     <>
@@ -43,58 +60,52 @@ const Page = () => {
         className="-z-10 fixed inset-0 w-full h-full object-cover"
         draggable={false}
       />
-      <div className="w-full   bg-no-repeat bg-cover flex justify-center">
+      <div className="w-full flex justify-center">
         <div className='mt-40 '>
-          <form
-            onSubmit={handleSubmit((data) => console.log(data))}
-            className="bg-black/50 text-white font-griffy p-10 rounded-3xl  shadow-md flex flex-col"
-          >
-            <h1 className='text-4xl text-gray-100 text-center font-poppins mb-8'>Event Registration</h1>
+          <div className="bg-black/50 text-white font-griffy p-10 rounded-3xl  shadow-md">
+            <div className='flex justify-center pb-2'>
+              <Image
+                src="/Images/Sristi 3.png"
+                alt="logo"
+                height={50}
+                width={150}
+              />
+            </div>
+            <h1 className='text-4xl text-gray-100 text-center font-poppins mb-8'>
+              {data === null ? 'Error!' : data} Registration
+            </h1>
 
-            <label className='mb-2 text-2xl'> Team Name <span className='text-red-500 text-sm'>*</span></label>
-            <input {...register('teamname')} className="mb-4 p-2 border bg-white/50" />
-            {errors.teamname && <p className="text-red-500">Team Name is required.</p>}
+            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col'>
+            <Toaster  position="bottom-right" reverseOrder={false}/>
+              <label className='mb-2 text-2xl'> Team Name <span className='text-red-500 text-sm'>*</span></label>
+              <input {...register('teamname')} className="mb-4 p-2 border bg-white/50" />
+              {errors.teamname && <p className="text-red-500">Team Name is required.</p>}
 
-            <label className='mb-2 text-2xl'> Event Name<span className='text-red-500 text-sm'>*</span></label>
-            <input
-              {...register('eventname', { required: true })}
-              className="mb-4 p-2 border bg-white/50"
-            />
-            {errors.eventname && <p className="text-red-500">Event Name is required.</p>}
-             <label className='mb-2 text-2xl'> Lead Name<span className='text-red-500 text-sm'>*</span></label>
-            <input
-              {...register('leadName', { required: true })}
-              className="mb-4 p-2 border bg-white/50"
-            />
-            {errors.leadName && <p className="text-red-500">Lead Name is required.</p>}
-            <label className='mb-2 text-2xl' > Lead Number<span className='text-red-500 text-sm'>*</span></label>
-            <input
-              {...register('leadnumber', { required: true })}
-              className="mb-4 p-2 border bg-white/50"
-            />
-            {errors.leadnumber && <p className="text-red-500">Lead Number is required.</p>}
-           {
-              memberInputs
-            }
+              <label className='mb-2 text-2xl'> Lead Name <span className='text-red-500 text-sm'>*</span></label>
+              <input
+                {...register('leadName', { required: true })}
+                className="mb-4 p-2 border bg-white/50"
+              />
+              {errors.leadName && <p className="text-red-500">Lead Name is required.</p>}
+              
+              <label className='mb-2 text-2xl' > Lead Number <span className='text-red-500 text-sm'>*</span></label>
+              <input
+                {...register('leadnumber', { required: true })}
+                className="mb-4 p-2 border bg-white/50"
+              />
+              {errors.leadnumber && <p className="text-red-500">Lead Number is required.</p>}
+              
+              {memberInputs}
 
-
-            {/* <label className='mb-2 text-2xl'> Age</label>
-            {errors.lastName && <p className="text-red-500">Last name is required.</p>}
-            <input
-              {...register('age', { pattern: /\d+/ })}
-              className="mb-4 p-2 border bg-white/50"
-            />
-            {errors.age && (
-              <p className="text-red-500">Please enter a number for age.</p>
-            )} */}
-            <input
-              type="submit"
-              className="bg-gradient-to-b from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-800
-               text-white font-bold py-2 px-4 rounded-full text-lg"
-              value="Submit"
-            />
-
-          </form>
+              <input
+                type="submit"
+                className="bg-gradient-to-b from-blue-500 to-blue-900 hover:from-blue-600 hover:to-blue-800
+                text-white font-bold py-2 px-4 rounded-full text-lg"
+                value="Submit"
+              />
+              <span className='text-red-500 text-lg '>* fields are required</span>
+            </form>
+          </div>
         </div>
       </div>
     </>
@@ -102,7 +113,3 @@ const Page = () => {
 };
 
 export default Page;
-
-
-// teamName, eventName leadEmail, members [name,
-//   email]

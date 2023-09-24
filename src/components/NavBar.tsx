@@ -20,7 +20,7 @@ export default function NavBar() {
           <Link href={"/team"}>
             <li className="mx-4 cursor-pointer capitalize">Teams</li>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/login"}>
             <li className="mx-4 cursor-pointer capitalize">Log in</li>
           </Link>
         </ul>

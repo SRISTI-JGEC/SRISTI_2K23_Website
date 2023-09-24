@@ -161,11 +161,12 @@ const Page = () => {
             </div>
           </div>
           <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem]">
-            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider"
-              onClick={handleSubmit}
-            >
-              Register Now
-            </button>
+            
+            <Link href={'/registration?data=Mesmarise'} className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+              <button>
+                Register Now
+              </button>
+            </Link>
             <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
               Leader Board
             </button></Link>
