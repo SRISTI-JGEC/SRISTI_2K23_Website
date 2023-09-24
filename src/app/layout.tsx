@@ -17,9 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+<<<<<<< HEAD
     <body>
       <NavBar />
       <div className={`${inter.className}`}>
+=======
+      <body className={`${inter.className} scrollbar-thin scrollbar-thumb-blue-100 scrollbar-track-gray-500`}>
+        <NavBar />
+>>>>>>> 3ca2e3a161ff17372e13ce1857bae6a2104457a5
         {children}
       </div>
     </body>

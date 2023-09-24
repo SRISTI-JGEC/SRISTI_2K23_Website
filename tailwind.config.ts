@@ -23,7 +23,11 @@ const config: Config = {
     },
   },
   plugins: [
+<<<<<<< HEAD
     require('@tailwindcss/typography'),
+=======
+    require('tailwind-scrollbar'),
+>>>>>>> 3ca2e3a161ff17372e13ce1857bae6a2104457a5
 ],
 };
 export default config;

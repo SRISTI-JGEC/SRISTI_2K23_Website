@@ -91,6 +91,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca2e3a161ff17372e13ce1857bae6a2104457a5
           </div>
         </div>
         <Reviews />
