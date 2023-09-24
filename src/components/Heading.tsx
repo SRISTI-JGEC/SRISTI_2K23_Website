@@ -1,15 +1,17 @@
 import Image from "next/image";
-function Heading() {
+function Heading(props: any) {
   return (
     <>
-      <div className="my-4">
-        <h1 className="capitalize text-6xl text-white font-semibold ms-4">about</h1>
+      <div className="mb-4 flex flex-col justify-center items-center">
+        <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold ">
+          {props.header}
+        </h1>
         <Image
           src="/underline-wand.png"
           alt="underline"
-          width={200}
-          height={200}
-          className=""
+          width={300}
+          height={300}
+          className="max-sm:w-[15rem]"
         />
       </div>
     </>
