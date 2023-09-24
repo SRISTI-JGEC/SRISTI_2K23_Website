@@ -1,5 +1,7 @@
-import React from "react";
-import Image from "../../node_modules/next/image";
+"use client";
+import React, { useEffect, useRef } from "react";
+import { useInView, useAnimation, motion } from "framer-motion";
+import Image from "next/image";
 
 const studentsDetails = [
   {
@@ -60,7 +62,7 @@ const studentsDetails = [
     name: "Abhgyan Prakash Singh",
     designation: "Treasurer",
     imgLink:
-      "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+      "https://drive.google.com/uc?export=view&id=1hstLPVxZLxOPi0fxNqBCmoYAAd08flgx",
   },
   {
     name: "Sumit Mazumdar ",
@@ -72,7 +74,7 @@ const studentsDetails = [
     name: "Joydev Karmakar",
     designation: "Logistics Head ",
     imgLink:
-      "https://drive.google.com/uc?export=view&id=1v9WvPDeTEOR-uTXPy-_PopplvAaqHzNQ",
+      "https://drive.google.com/uc?export=view&id=1fqHqxpt9LANAfxWv3AObGv-qylbRkG_t",
   },
   {
     name: "Arkamitra Ghosh",
@@ -113,9 +115,25 @@ const studentsDetails = [
 ];
 
 function StudentsTeam() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ opacity: 1, y: 0 });
+    }
+  }, [isInView]);
+
   return (
     <div className="w-full">
-      <h1 className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8">
+      <motion.h1
+        initial={{ opacity: 0, y: 75 }}
+        animate={mainControls}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8"
+      >
         Students Team
         <Image
           alt=""
@@ -123,13 +141,20 @@ function StudentsTeam() {
           width={200}
           className="w-36 lg:w-60"
           src={`/underline-wand.png`}
+          draggable={false}
         />
-      </h1>
+      </motion.h1>
 
       <div>
-        <div className="flex max-w-[90rem] mx-auto justify-center items-center flex-wrap gap-x-5 sm:gap-x-20 pb-10 gap-y-4 lg:px-10">
+        <div
+          ref={ref}
+          className="flex max-w-[90rem] mx-auto justify-center items-center flex-wrap gap-x-5 sm:gap-x-20 pb-10 gap-y-4 lg:px-10"
+        >
           {studentsDetails.map((details, ind) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 75 }}
+              animate={mainControls}
+              transition={{ duration: 0.8, delay: 0.3 }}
               key={ind}
               className="flex flex-col items-center justify-start w-36 h-56 sm:w-44 sm:h-72 gap-4 "
             >
@@ -140,15 +165,18 @@ function StudentsTeam() {
                   src={details.imgLink}
                   alt={details.name}
                   className="rounded-full p-1 mx-auto  h-32 w-32 sm:w-44 sm:h-44 object-cover"
+                  draggable={false}
                 />
               </div>
               <div>
-                <p className="text-center font-bold sm:text-lg">{details.name}</p>
+                <p className="text-center font-bold sm:text-lg">
+                  {details.name}
+                </p>
                 <p className="text-center max-sm:text-sm">
                   {details.designation}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,6 +1,6 @@
-import React from "react";
 
 const LeaderBoard = () => {
+  
   return (
     <>
       <div className="w-full h-screen  overflow-y-scroll bg-leaderboard_Image bg-no-repeat bg-cover">

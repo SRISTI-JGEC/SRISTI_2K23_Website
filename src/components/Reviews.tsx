@@ -9,11 +9,27 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import ReviewCard from "./ReviewCard";
+import { formattedReviews } from "@/app/api/reviews/route";
 
 const Reviews = () => {
+  const [reviews, setReviews] = useState<formattedReviews[] | null>(null);
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await axios.get("/api/reviews");
+        setReviews(res.data.formated_reviews_object!);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
+
   return (
     <div className="h-screen text-white">
-      <div className="text-4xl md:text-6xl px-28 text-center md:text-start p-16 font-medium font-harry">
+      <div className="text-4xl md:text-6xl px-28 text-center md:text-start p-16 font-medium font-griffy">
         Reviews
         <Image
           src="/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png"
@@ -24,36 +40,34 @@ const Reviews = () => {
         />
       </div>
       <div className="w-full flex items-center">
-        <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          slidesPerView={1}
-          navigation={true}
-          spaceBetween={20}
-          pagination={true}
-          className="mySwiper w-4/5 md:w-2/3 overflow-hidden"
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-            },
-          }}
-          scrollbar={{
-            el: ".swiper-scrollbar",
-            hide: true,
-          }}
-        >
-          {[1, 2, 3, 4, 5].map((obj, index) => (
-            <SwiperSlide key={index} className="">
-              <Image
-                src={"/Images/Untitled-2.png"}
-                alt={"something"}
-                width={950}
-                height={950}
-                className=""
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {reviews === null ? (
+          "Loading..."
+        ) : (
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            slidesPerView={1}
+            navigation={true}
+            spaceBetween={20}
+            pagination={true}
+            className="mySwiper w-full lg:w-4/5 md:w-2/3 overflow-hidden"
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+            }}
+            scrollbar={{
+              el: ".swiper-scrollbar",
+              hide: true,
+            }}
+          >
+            {reviews.map((review, index) => (
+              <SwiperSlide key={index} className="">
+                <ReviewCard review={review} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
     </div>
   );

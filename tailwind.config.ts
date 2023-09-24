@@ -17,10 +17,13 @@ const config: Config = {
       },
     },
     fontFamily: {
+      griffy: ["Griffy", "cursive"],
       harry: ["Harry P", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+],
 };
 export default config;
