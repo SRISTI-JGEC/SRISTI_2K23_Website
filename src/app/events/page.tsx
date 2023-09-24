@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import EventCard from "@/components/events-page/EventCard";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -6,67 +6,64 @@ import { motion } from "framer-motion";
 const techeEvents = [
   {
     id: 1,
-    category: "Robotics",
+    category: "robotics",
     events: [
-      { name: "TECHZIBITION", link: "/events/hii" },
-      { name: "ROBO-SOCCER", link: "/events/" },
-      { name: "MAZE-MERIZE", link: "/events/" },
+      { name: "mazemarize", link: "/events/mazemarize" },
+      { name: "robo soccer", link: "/events/roboSoccer" },
+      { name: "sputnik", link: "/events/sputnik" },
     ],
     image: "/Images/batch1.png",
     inverted: false,
   },
   {
     id: 2,
-    category: "Civilised",
+    category: "civilised",
     events: [
-      { name: "BRIDGE-THE-GAP", link: "/events/" },
-      { name: "ROTOLARE", link: "/events/" },
+      { name: "rotolare", link: "/events/rotolare" },
+      { name: "bridge the gap", link: "/events/bridgeTheGap" },
     ],
-    image: "/Images/batch1.png",
+    image: "/Images/batch2.png",
     inverted: true,
   },
   {
     id: 3,
-    category: "Robotics",
+    category: "techmania",
     events: [
-      { name: "TECHZIBITION", link: "/events/" },
-      { name: "ROBO-SOCCER", link: "/events/" },
-      { name: "MAZE-MERIZE", link: "/events/" },
+      { name: "code chronicles", link: "/events/codeChronicles" },
+      { name: "css battle", link: "/events/cssBattle" },
+      { name: "capture the flag", link: "/events/captureTheFlag" },
     ],
-    image: "/Images/batch1.png",
+    image: "/Images/batch3.png",
     inverted: false,
   },
   {
     id: 4,
-    category: "Civilised",
+    category: "management",
     events: [
-      { name: "BRIDGE-THE-GAP", link: "/events/" },
-      { name: "ROTOLARE", link: "/events/" },
+      { name: "shark tank jolu", link: "/events/sharkTankJolu" },
+      { name: "j-buzz", link: "/events/jBuzz" },
     ],
-    image: "/Images/batch1.png",
+    image: "/Images/batch5.png",
     inverted: true,
   },
   {
     id: 5,
-    category: "Robotics",
-    events: [
-      { name: "TECHZIBITION", link: "/events/" },
-      { name: "ROBO-SOCCER", link: "/events/" },
-      { name: "MAZE-MERIZE", link: "/events/" },
-    ],
-    image: "/Images/Batch2.png",
+    category: "exhibition",
+    events: [{ name: "techzibition", link: "/events/techzibition" }],
+    image: "/Images/Batch1.png",
     inverted: false,
   },
 ];
 
-const Page = () => {
+const page = () => {
   return (
     <>
       <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
-        <motion.div
-        className="relative text-white mb-2">
-          <div className=" flex justify-center items-center flex-col mt-24  text-center w-full text-6xl font-semibold">
-            <p>Events</p>
+        <motion.div className="relative text-white mb-2">
+          <div className=" flex justify-center items-center flex-col mt-24">
+            <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold ">
+              Events
+            </h1>
             <Image
               src={
                 "/Images/toppng.com-elder-wand1-harry-potter-wand-draw-transparent-635x50.png"
@@ -75,6 +72,7 @@ const Page = () => {
               width={300}
               height={300}
               draggable={false}
+              className="max-sm:w-[15rem]"
             />
           </div>
           {techeEvents.map((event, index) => (
@@ -86,4 +84,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
