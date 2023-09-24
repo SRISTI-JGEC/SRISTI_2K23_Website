@@ -59,7 +59,7 @@ const techeEvents = [
   },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
@@ -86,4 +86,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
