@@ -223,21 +223,15 @@ const Page = () => {
               </span>
             </div>
           </div>
-          <h1 className="text-xl sm:text-[3rem] font-griffy tracking-wider text-center my-3 sm:mb-6">
-            we are starting soon
-          </h1>
-          <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] py-4">
-            <button
-              className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider"
+          <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem]">
+            <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider"
               onClick={handleSubmit}
             >
               Register Now
             </button>
-            <Link href={"/events/mesmarise/leaderboard"}>
-              <button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
-                Leader Board
-              </button>
-            </Link>
+            <Link href={'/events/mesmarise/leaderboard'}><button className="py-[7px] px-[15px] max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+              Leader Board
+            </button></Link>
           </div>
         </div>
       </div>
