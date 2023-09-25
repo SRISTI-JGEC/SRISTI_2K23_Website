@@ -4,12 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import {
-  faAt,
-  faEye,
-  faEyeSlash,
-} from "@fortawesome/free-solid-svg-icons";
-
+import { faAt, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/navigation";
 
 //* ---------------------- Type for the userfields -------------------------------------------------------;
 type UserFields = {
@@ -18,6 +14,7 @@ type UserFields = {
 };
 
 const Page = () => {
+  const route = useRouter();
   // *------------------------------useState for password visibility------------------------------
   const [passwordview, setPasswordview] = useState<boolean>(false);
   const handleViewChange = () => {
@@ -38,11 +35,18 @@ const Page = () => {
   // *---------------------------------- Login Button handleSubmit Function ---------------------------------
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const {  email, password } = userFields;
-    const res = await axios.post("/api/users/login", {
-      email,
-      password,
-    });
+    try {
+      const { email, password } = userFields;
+      const res = await axios.post("/api/users/login", {
+        email,
+        password,
+      });
+      // show some effect to user or redirect to home
+      console.log(res);
+      route.push("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

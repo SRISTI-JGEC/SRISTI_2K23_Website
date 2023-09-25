@@ -60,18 +60,25 @@ const Page = () => {
   // *---------------------------------- Login Button handleSubmit Function ---------------------------------
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    // name, year, dept, roll, phone, email, password, payReceipt;
-    const { name, email, mobile, rollno, bill, password } = userFields;
-    const res = await axios.post("/api/users/signup", {
-      name,
-      year: selectyear,
-      dept: selectdept,
-      roll: rollno,
-      phone: mobile,
-      email,
-      password,
-      payReceipt: bill,
-    });
+    try {
+      // name, year, dept, roll, phone, email, password, payReceipt;
+      const { name, email, mobile, rollno, bill, password } = userFields;
+      const res = await axios.post("/api/users/signup", {
+        name,
+        year: selectyear === year[0] ? 1 : 2,
+        dept: selectdept,
+        roll: rollno,
+        phone: mobile,
+        email,
+        password,
+        payReceipt: bill,
+      });
+      // Show successful Registration and to verify email
+      console.log(res);
+    } catch (error) {
+      // Show Error to user also
+      console.log(error);
+    }
   };
 
   return (
@@ -325,10 +332,10 @@ const Page = () => {
               />
             </div>
             <button
-              className="bg-[#f5f5f5] p-2 w-full my-5 text-black font-semibold text-lg  sm:text-2xl"
+              className="bg-[#f5f5f5] p-2 w-full my-5 text-black font-semibold text-lg  sm:text-2xl capitalize"
               onClick={handleSubmit}
             >
-              Log in
+              Sign up
             </button>
           </form>
           <p>

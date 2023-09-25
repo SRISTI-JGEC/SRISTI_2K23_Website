@@ -1,69 +1,50 @@
-type EventData= {
-  id: number;
-  category: String;
-  rules: Array<String>;
-  name: String;
-  eventMembers: Array<{
-    name: String;
-    imgSrc: String;
-    position: String;
-    phone: String;
-    dept: String;
-    year: String;
-    email: String;
-  }>;
-  videoSrc: String;
-  venue: String;
-  time: String;
-  register: String;
-  leaderboard: String;
-  prizes: Array<number>;
-}
-
 export const EventList = [
   {
     id: 1,
     category: "mazemarize",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "mazemarize",
-    eventMembers: [
+    eventcoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event lead",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Swagata Khuntia",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1EO_VCTK_ptV1L89Akys2qSmsv5coos6I",
+        position: "event coordinator",
+        phone: "9907144797",
+        dept: "ECE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "swagatakhuntia2003@gmail.com",
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Dip Roy ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1lFesSzXCwwQfqOkyal2WqKRmeqEdOmlP",
+        position: "event coordinator",
+        phone: "9749021886",
+        dept: "ME",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "dipp713146@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
-    venue: "auditoriam hall",
+    venue: "auditorium hall",
     time: "Oct 3, 2023 12:00:00",
     register: "/events/mazemarize/register",
     leaderboard: "/events/mazemarize/leaderboard",
@@ -73,41 +54,44 @@ export const EventList = [
     id: 2,
     category: "roboSoccer",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "robo Soccer",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Asanka Maiti",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1YhbJfZZLYTwjsEEW0SWnLRpExiPDZkyb",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "7797307847",
+        dept: "ECE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "asankamaiti111@gmail.com",
+        isReverse: false,
+      },
+      {
+        name: "Amit Maiti ",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1MTu3In2RGMc24Xxban7gdcS8TqvGYRt-",
+        position: "event coordinator",
+        phone: "9749427693",
+        dept: "ECE",
+        year: "3rd",
+        email: "amitmaiti2003@gmail.com",
+        isReverse: true,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ECE",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
-      },
-      {
-        name: "swadesh pal",
-        imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
-        year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -121,41 +105,44 @@ export const EventList = [
     id: 3,
     category: "sputnik",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "sputnik",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Taibu roy ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1h7U9nBgi9bilbKCgg1S4kvFX3fx9IOAS",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "9883482136",
+        dept: "ME",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "taiburay27@gmail.com",
+        isReverse: false,
+      },
+      {
+        name: "Soumen mallick",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1YkBszyMYJhCEKLkgF40rF18yOE-wdj-M",
+        position: "event coordinator",
+        phone: "7478552309",
+        dept: "ECE",
+        year: "3rd",
+        email: "sonaimallick765@gmail.com",
+        isReverse: true,
       },
       {
         name: "swadesh pal",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+          "https://drive.google.com/uc?export=view&id=1SDP4-RQbVeshsQbxe4Uyii-VetTBLSZe",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
-      },
-      {
-        name: "swadesh pal",
-        imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
-        year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -163,47 +150,50 @@ export const EventList = [
     time: "Oct 3, 2023 12:00:00",
     register: "/events/sputnik/register",
     leaderboard: "/events/sputnik/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [5000, 3000, 2000],
   },
   {
     id: 4,
     category: "rotolare",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "rotolare",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Om Kumar Sah",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1Kj_P1PXqUQ_cE0r5LfEh9k-axXICYVVx",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "6290889507",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "ok2508@ce.jgec.ac.in",
+        isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Aditi Pal",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1VtYK_5WGuhfLC_W4_NrtZ7xGZ0yicEbX/view",
+        position: "event coordinator",
+        phone: "8902797178",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "ap2530@ce.jgec.ac.in",
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Malay Poulik ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1AdNy96trAS7Aqe2anTo0REm9kh_nVsPh",
+        position: "event coordinator",
+        phone: "7679185576",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "malaypoulik252@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -217,41 +207,43 @@ export const EventList = [
     id: 5,
     category: "bridgeTheGap",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "bridge The Gap",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Akash Kumar layek ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1Sa_ZDdVE-HKqad6CuowC0mwsrcu95-Mn",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "7797672846",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "ak2563@ce.jgec.ac.in",
+        isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Mahek Parvez",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1gVVVeDZtgMJYUATtR777VvJ5oHLsLqPo",
+        position: "event coordinator",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "mp2555@ce.jgec.ac.in",
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Sourav Ganguly",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1iGxt9tkZnsDSpx02zdOipM-C7gokBCyB",
+        position: "event coordinator",
+        phone: "8918798847",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "sg2525@ce.jgec.ac.in",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -265,41 +257,44 @@ export const EventList = [
     id: 6,
     category: "codeChronicles",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "code Chronicles",
-    eventMembers: [
+    eventcoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event lead",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -313,41 +308,44 @@ export const EventList = [
     id: 7,
     category: "cssBattle",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "css Battle",
-    eventMembers: [
+    eventcoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event lead",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Siddharth Biswas",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=11fFWkKoLVXk6i-pw1r8mqAgd0aZXa9ur",
+        position: "event coordinator",
+        phone: "6291369741",
+        dept: "IT",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "siddharth211102@gmail.com",
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Aishik Patra",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
+          "https://drive.google.com/uc?export=view&id=1dBRD3ZqFctLiDvMcldg11k1Jnr8xVj88",
+        position: "event coordinator",
+        phone: "7602989174",
+        dept: "IT",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "ap2557@it.jgec.ac.in",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -361,41 +359,44 @@ export const EventList = [
     id: 8,
     category: "captureTheFlag",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "capture The Flag",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Pankaj Barman ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1C6gI1ToLCqCyfRqbL0xRqJBrOY8yNUCy",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "8101480752",
+        dept: "CSE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "pb2538@cse.jgec.ac.in",
+        isReverse: false,
+      },
+      {
+        name: "Sandipan Chatterjee",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1FGimIoX-cl-pUjwsi_161qKZEFd2ot2t",
+        position: "event coordinator",
+        phone: "8258977597",
+        dept: "CSE",
+        year: "3rd",
+        email: "sandipan3002@gmail.com",
+        isReverse: true,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
-      },
-      {
-        name: "swadesh pal",
-        imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
-        year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -409,41 +410,44 @@ export const EventList = [
     id: 9,
     category: "sharkTankJolu",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "shark Tank Jolu",
-    eventMembers: [
+    eventcoordinators: [
       {
-        name: "swadesh pal",
+        name: "Adrita Mandal",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1jdy-f7Qw7TQj4BA945jEOzv2F8zFTARx",
         position: "event lead",
-        phone: "8436893969",
-        dept: "Information Technology",
+        phone: "9679953824",
+        dept: "IT",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "mandaladrita8@gmail.com",
+        isReverse: false,
+      },
+      {
+        name: "Rohini Afsana",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1OKlcVhCLJzDa0xgnvkdVom3r5t_ZNYIq",
+        position: "event coordinator",
+        phone: "7983216103",
+        dept: "EE",
+        year: "3rd",
+        email: "ra2554@ee.jgec.ac.in",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
-      },
-      {
-        name: "swadesh pal",
-        imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
-        phone: "8436893969",
-        dept: "Information Technology",
-        year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -457,41 +461,44 @@ export const EventList = [
     id: 10,
     category: "jBuzz",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "j Buzz",
-    eventMembers: [
+    eventcoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event lead",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",
@@ -502,44 +509,47 @@ export const EventList = [
     prizes: [5000, 2000, 1000],
   },
   {
-    id: 9,
+    id: 11,
     category: "sharkTankJolu",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffasdfhjklsdfsdafasddf",
-      "dsfsdhjkfasdhfsdafhasdjkfasdhfasdhasdhjfdasfasdfdsfsdfsd",
-      "dsfhasdhasdajsdjfasdkhfsdafhhfsdkjfhasdfadsfdsfd",
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "shark Tank Jolu",
-    eventMembers: [
+    eventcoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event lead",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
       {
         name: "swadesh pal",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
-        position: "event member",
+        position: "event coordinator",
         phone: "8436893969",
-        dept: "Information Technology",
+        dept: "ME",
         year: "3rd",
         email: "swadeshpal129@gmail.com",
+        isReverse: false,
       },
     ],
     videoSrc: "/Video/video.mp4",

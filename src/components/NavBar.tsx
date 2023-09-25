@@ -48,7 +48,7 @@ export default function NavBar() {
         <div
           className={
             closedNav
-              ? "w-full h-screen bg-gray-800/80 backdrop-blur-xl z-50 fixed top-0 left-0 p-8"
+              ? "w-full h-screen bg-[rgba(0,0,0)] backdrop-blur-md  z-50 fixed top-0 left-0 p-8"
               : "hidden"
           }
         >
@@ -70,10 +70,10 @@ export default function NavBar() {
               />
             </Link>
           </div>
-          <ul className="flex justify-center items-center flex-col text-x  mt-6">
+          <ul className="flex justify-center items-center flex-col text-xl  mt-6">
             <Link href={"/"}>
               <li
-                className="mx-4 cursor-pointer capitalize text-xl"
+                className="my-2 cursor-pointer capitalize text-xl"
                 onClick={() => setClosedNav(!closedNav)}
               >
                 Home
@@ -81,7 +81,7 @@ export default function NavBar() {
             </Link>
             <Link href={"/events"}>
               <li
-                className="mx-4 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize"
                 onClick={() => setClosedNav(!closedNav)}
               >
                 Events
@@ -89,7 +89,7 @@ export default function NavBar() {
             </Link>
             <Link href={"/team"}>
               <li
-                className="mx-4 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize"
                 onClick={() => setClosedNav(!closedNav)}
               >
                 Teams
@@ -97,7 +97,7 @@ export default function NavBar() {
             </Link>
             <Link href={"/login"}>
               <li
-                className="mx-4 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize"
                 onClick={() => setClosedNav(!closedNav)}
               >
                 Log in
