@@ -15,6 +15,7 @@ export async function POST(request: NextRequest){
         const user = await User.findOne({payReceipt, isVerified : true});
 
         if(user){
+            console.log(user);
             return NextResponse.json({error: "User already exists"}, {status: 400});
         }
 
