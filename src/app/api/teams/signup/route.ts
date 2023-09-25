@@ -15,7 +15,7 @@ export async function POST(request: NextRequest){
         const team1 = await Team.findOne({leadEmail});
         const team2 = await Team.findOne({eventName, "members.email" : leadEmail});
 
-        if(team || team1 || team2){
+        if(team && (team1 || team2)){
             return NextResponse.json({error: "Team already exists or Lead is already been registered in an other teeam"}, {status: 400});
         }
 
