@@ -10,7 +10,10 @@ export async function POST(request: NextRequest){
     try {
         const reqBody = await request.json();
         const {email, password} = reqBody;
+<<<<<<< HEAD
         // console.log(reqBody);
+=======
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
 
         //check if user exists
         const user = await User.findOne({email});
@@ -25,6 +28,13 @@ export async function POST(request: NextRequest){
             { status: 400 }
           );
         }
+<<<<<<< HEAD
+=======
+        else if(user.isVerified === false) {
+            return NextResponse.json({error: "User's email id is not verified"}, {status: 400});
+        }
+        
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
         //check if password is correct
         const validPassword = await bcryptjs.compare(password, user.password)
         if(!validPassword){

@@ -18,6 +18,7 @@ import {
   faEye,
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
+import { NextResponse } from "next/server";
 
 // *--------------------- Variable for selecting department and year --------------------------------------;
 const department = ["CE", "ME", "EE", "ECE", "CSE", "IT"];
@@ -61,11 +62,20 @@ const Page = () => {
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       // name, year, dept, roll, phone, email, password, payReceipt;
       const { name, email, mobile, rollno, bill, password } = userFields;
       const res = await axios.post("/api/users/signup", {
         name,
         year: selectyear === year[0] ? 1 : 2,
+=======
+      
+        // name, year, dept, roll, phone, email, password, payReceipt;
+        const { name, email, mobile, rollno, bill, password } = userFields;
+      const res = await axios.post("/api/users/signup", {
+        name,
+        year: (selectyear === year[0]) ? 1 : 2,
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
         dept: selectdept,
         roll: rollno,
         phone: mobile,
@@ -335,7 +345,11 @@ const Page = () => {
               className="bg-[#f5f5f5] p-2 w-full my-5 text-black font-semibold text-lg  sm:text-2xl capitalize"
               onClick={handleSubmit}
             >
+<<<<<<< HEAD
               Sign up
+=======
+              Sign Up
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
             </button>
           </form>
           <p>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,15 +36,23 @@ const Page = () => {
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const { email, password } = userFields;
+=======
+      const {  email, password } = userFields;
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
       const res = await axios.post("/api/users/login", {
         email,
         password,
       });
       // show some effect to user or redirect to home
       console.log(res);
+<<<<<<< HEAD
       route.push("/");
     } catch (error) {
+=======
+    } catch(error) {
+>>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
       console.log(error);
     }
   };
