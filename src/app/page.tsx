@@ -1,6 +1,8 @@
 import Heading from "@/components/Heading";
 import Reviews from "@/components/Reviews";
 import Sponsors from "@/components/Sponsors";
+import Priciple from "@/components/Priciple";
+import History from "@/components/History";
 import Image from "next/image";
 
 export default function Home() {
@@ -93,6 +95,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Priciple />
+        <History />
+        <Sponsors />
         <Reviews />
       </div>
     </>
