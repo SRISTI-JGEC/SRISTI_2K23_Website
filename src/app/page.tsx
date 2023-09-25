@@ -1,6 +1,7 @@
 import Heading from "@/components/Heading";
 import Reviews from "@/components/Reviews";
 import Sponsors from "@/components/Sponsors";
+import Priciple from "@/components/Priciple";
 import Image from "next/image";
 
 export default function Home() {
@@ -95,15 +96,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
- 
-          <Sponsors/>
-    
- 
-          <Reviews/>
-        
+        <Priciple />
+        <Sponsors />
+        <Reviews />
       </div>
     </>
   );
