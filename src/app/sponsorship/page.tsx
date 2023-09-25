@@ -37,17 +37,17 @@ const Page = () => {
               Igniting Innovation. Your presence here is a testament to your
               unwavering support for innovation, technology, and the future of
               our world.Sristi has always stood as a beacon of creativity and an
-              incubator of groundbreaking ideas. It's a platform where
+              incubator of groundbreaking ideas. It&apos;s a platform where
               technology and imagination converge, sparking solutions that
-              redefine the boundaries of what's possible. None of this would be
+              redefine the boundaries of what&apos;s possible. None of this would be
               possible without your generous support.
               <br />
               <br />
-              Your investment in Sristi goes beyond financial assistance; it's
+              Your investment in Sristi goes beyond financial assistance; it&apos;s
               an investment in the dreams and aspirations of countless young
               minds who are eager to make their mark on the tech world. Your
               partnership empowers them to explore, innovate, and create with a
-              sense of purpose.Throughout the event, you'll witness the
+              sense of purpose.Throughout the event, you&apos;ll witness the
               incredible talent, enthusiasm, and dedication of our participants.
               We encourage you to engage with them, exchange ideas, and be
               inspired by the next generation of tech visionaries.
@@ -56,7 +56,7 @@ const Page = () => {
               Once again, thank you for your invaluable support. Together, we
               will make Sristi: Igniting Innovation an unforgettable experience
               that will inspire, educate, and leave a lasting impact on all who
-              participate.Let's embark on this exciting journey of innovation
+              participate.Let&apos;s embark on this exciting journey of innovation
               together and make Sristi 2023 a grand success. Welcome to the
               future!
               <br />

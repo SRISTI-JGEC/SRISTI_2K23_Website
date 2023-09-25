@@ -27,8 +27,8 @@ const Priciple = () => {
         <div className="font-griffy relative w-[80%] min-h-full max-sm:w-full p-4 bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
           <p>
             Today the world economy is experiencing an unprecedented change. At
-            present India stands as world's fifth largest economic power. Indian
-            Entrepreneurs emerging as global entrepreneurs. India's knowledge
+            present India stands as world&apos;s fifth largest economic power. Indian
+            Entrepreneurs emerging as global entrepreneurs. India&apos;s knowledge
             has made it as a preferred destination for outsourcing services from
             India & also India is emerging as a destination for world class RGO
             centres and Innovation hubs. New developments in science and
