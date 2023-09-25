@@ -81,7 +81,7 @@ function page() {
                 </thead>
                 <tbody>
                   {data.map((item, idx) => (
-                    <tr className="border-b dark:border-neutral-500">
+                    <tr key={idx} className="border-b dark:border-neutral-500">
                       <td className="whitespace-nowrap px-6 py-4 font-medium">
                         {idx + 1}
                       </td>
