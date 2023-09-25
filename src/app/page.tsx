@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Heading from "@/components/Heading";
 import Reviews from "@/components/Reviews";
 import Sponsors from "@/components/Sponsors";
@@ -94,6 +95,7 @@ export default function Home() {
           </div>
         </div>
         <Reviews />
+        <Footer/>
       </div>
     </>
   );
