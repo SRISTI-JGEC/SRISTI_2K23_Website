@@ -19,9 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* <Music /> */}
         <NavBar />
-        <Music />
         <div className={`${inter.className}`}>{children}</div>
+        
       </body>
     </html>
   );
