@@ -13,8 +13,11 @@ export async function POST(request: NextRequest){
         const {name, year, dept, roll, phone, email, password, payReceipt} = reqBody;
 
         const user = await User.findOne({payReceipt, isVerified : true});
+        const user1 = await User.findOne({email, isVerified : true});
+        const user2 = await User.findOne({phone, isVerified : true});
 
-        if(user){
+        if(user || user1 || user2){
+            console.log(user);
             return NextResponse.json({error: "User already exists"}, {status: 400});
         }
 

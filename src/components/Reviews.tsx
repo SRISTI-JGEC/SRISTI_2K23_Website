@@ -52,7 +52,7 @@ const Reviews = () => {
             pagination={true}
             className="mySwiper w-full lg:w-4/5 md:w-2/3 overflow-hidden"
             breakpoints={{
-              768: {
+              850: {
                 slidesPerView: 2,
               },
             }}
