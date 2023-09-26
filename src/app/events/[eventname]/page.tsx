@@ -7,27 +7,28 @@ import { useParams, useRouter } from "next/navigation";
 import { EventList } from "@/app/assets/EventDetails";
 // import ruleBg from "/public/Images/Untitled-2.png";
 
-type TimeLeft = {
+export type TimeLeft = {
   days: number;
   hours: number;
   minutes: number;
   seconds: number;
 };
-type EventData = {
+export type eventCoordinatorSchema = {
+  name: String;
+  imgSrc: string;
+  position: String;
+  phone: String;
+  dept: String;
+  year: String;
+  email: String;
+  isReverse: boolean;
+};
+export type EventData = {
   id: number;
   category: String;
   rules: String[];
   name: String;
-  eventcoordinators: {
-    name: String;
-    imgSrc: string;
-    position: String;
-    phone: String;
-    dept: String;
-    year: String;
-    email: String;
-    isReverse: boolean;
-  }[];
+  eventCoordinators: eventCoordinatorSchema[];
   videoSrc: string;
   venue: String;
   time: String;
@@ -42,7 +43,9 @@ const Page = () => {
   const [eventData, setEventData] = useState<EventData | undefined>(undefined);
   const findEvent = () => {
     const event = EventList.find((items) => items.category === eventname);
-    setEventData(event);
+    if (event !== undefined) {
+      setEventData(event);
+    }
   };
 
   useEffect(() => {
@@ -114,7 +117,7 @@ const Page = () => {
               <ol className="w-[95%] text-[#d4d4d4] text-sm ">
                 {eventData?.rules.map((items, i) => {
                   return (
-                    <li className="py-1 text-sm sm:text-lg">
+                    <li className="py-1 text-sm sm:text-lg" key={i}>
                       {i + 1}) {items}
                     </li>
                   );
@@ -136,13 +139,14 @@ const Page = () => {
             />
           </div>
           <div className="my-[2rem] flex flex-col justify-center items-center w-[80%] max-[640px]:w-[90%]">
-            {eventData?.eventcoordinators.map((items) => {
+            {eventData?.eventCoordinators.map((items, i) => {
               return (
                 <>
                   <div
                     className={`flex justify-between items-center w-[100%] ${
                       items.isReverse ? "flex-row-reverse" : ""
                     } mb-5 max-[640px]:flex-col`}
+                    key={i}
                   >
                     <div className="relative w-[150px] h-[150px] rounded-full overflow-hidden flex justify-center items-center  max-[640px]:w-[100px] max-[640px]:h-[100px] max-[640px]:mb-[1.2rem]">
                       <Image

@@ -1,4 +1,6 @@
-export const EventList = [
+import { eventCoordinatorSchema,EventData } from "../events/[eventname]/page";
+
+export const EventList: EventData[] = [
   {
     id: 1,
     category: "mazemarize",
@@ -8,16 +10,16 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "mazemarize",
-    eventcoordinators: [
+    eventCoordinators: [
       {
-        name: "swadesh pal",
+        name: "Rajat Nandi",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=12Lo2MgxKilOd5T_q8RIcG5oXVXI6ui0B",
         position: "event lead",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "8900352943",
+        dept: "ECE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "rn25252@ece.jgec.ac.in",
         isReverse: false,
       },
       {
@@ -59,7 +61,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "robo Soccer",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Asanka Maiti",
         imgSrc:
@@ -110,7 +112,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "sputnik",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Taibu roy ",
         imgSrc:
@@ -161,7 +163,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "rotolare",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Om Kumar Sah",
         imgSrc:
@@ -207,12 +209,18 @@ export const EventList = [
     id: 5,
     category: "bridgeTheGap",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
-      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
-      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
+      "Bridge should be with in the specific range of height and length , which will be specified before the event.",
+      "The Bridge must have to be a suspension bridge .",
+      "Winner will be decided on the basis of load carrying capacity of their bridge ",
+      "Event is open to all",
+      "Maximum team size is 5",
+      "Participants can form teams from different branches/ college/ university/institute.",
+      "No two teams must have any common member.",
+      "The time limit for the completion is (will be declared soon) hours.",
+      "The decision of the judges shall be final.",
     ],
     name: "bridge The Gap",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Akash Kumar layek ",
         imgSrc:
@@ -229,6 +237,7 @@ export const EventList = [
         imgSrc:
           "https://drive.google.com/uc?export=view&id=1gVVVeDZtgMJYUATtR777VvJ5oHLsLqPo",
         position: "event coordinator",
+        phone: "8597530118",
         dept: "CE",
         year: "3rd",
         email: "mp2555@ce.jgec.ac.in",
@@ -257,36 +266,38 @@ export const EventList = [
     id: 6,
     category: "codeChronicles",
     rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
-      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
-      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
+      "3 CP Questions  in prelims",
+      "5 CP Questions in prelims",
+      "Top 20%* will qualify for finals",
+      "5 CP Questions in final round",
+      "2 hours in final round",
     ],
     name: "code Chronicles",
-    eventcoordinators: [
+    eventCoordinators: [
       {
-        name: "swadesh pal",
+        name: "Spandan Bhattacharya",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=15aT6ylFzNqcxcUk-lQpiW1xKG8In3r3U",
         position: "event lead",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "9330184706",
+        dept: "CSE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "spandanbhattacharya.sb@gmail.com",
         isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Animesh Bag ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1fGNdI48aOF9YBEhG1pWvYP7wxUvJ5laM",
         position: "event coordinator",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "6297733147",
+        dept: "CSE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
-        isReverse: false,
+        email: "animeshbag606@gmail.com",
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Sucil dey",
         imgSrc:
           "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
         position: "event coordinator",
@@ -302,7 +313,7 @@ export const EventList = [
     time: "Oct 3, 2023 12:00:00",
     register: "/events/codeChronicles/register",
     leaderboard: "/events/codeChronicles/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1723, 1024, 576],
   },
   {
     id: 7,
@@ -313,7 +324,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "css Battle",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
@@ -364,7 +375,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "capture The Flag",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Pankaj Barman ",
         imgSrc:
@@ -415,7 +426,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "shark Tank Jolu",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "Adrita Mandal",
         imgSrc:
@@ -436,17 +447,17 @@ export const EventList = [
         dept: "EE",
         year: "3rd",
         email: "ra2554@ee.jgec.ac.in",
-        isReverse: false,
+        isReverse: true,
       },
       {
-        name: "swadesh pal",
+        name: "Debraat halder",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1GB1O03PDY6KgDSRuZnHsY6Cv2Ls7hFfe",
         position: "event coordinator",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "8967903389",
+        dept: "CE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "debraathalder69@gmail.com",
         isReverse: false,
       },
     ],
@@ -466,7 +477,7 @@ export const EventList = [
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
     name: "j Buzz",
-    eventcoordinators: [
+    eventCoordinators: [
       {
         name: "swadesh pal",
         imgSrc:
@@ -510,45 +521,198 @@ export const EventList = [
   },
   {
     id: 11,
-    category: "sharkTankJolu",
+    category: "modelParliament",
     rules: [
       "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
       "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
       "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
     ],
-    name: "shark Tank Jolu",
-    eventcoordinators: [
+    name: "Model Parliament",
+    eventCoordinators: [
       {
-        name: "swadesh pal",
+        name: "Aditi kumari",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1tVS3hZoghEDW1_d-irpgSDyI9gCKAbn6",
         position: "event lead",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "7407570466",
+        dept: "IT",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "123aditi.kr@gmail.com",
         isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Rohini Afsana",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1OKlcVhCLJzDa0xgnvkdVom3r5t_ZNYIq",
         position: "event coordinator",
-        phone: "8436893969",
-        dept: "ME",
+        phone: "7983216103",
+        dept: "EE",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "ra2554@ee.jgec.ac.in",
+        isReverse: true,
+      },
+      {
+        name: "Sumit Mazumdar ",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1v9WvPDeTEOR-uTXPy-_PopplvAaqHzNQ",
+        position: "event coordinator",
+        phone: "7739164949",
+        dept: "CE",
+        year: "3rd",
+        email: "sm2512@ce.jgec.ac.in",
+        isReverse: false,
+      },
+    ],
+    videoSrc: "/Video/video.mp4",
+    venue: "english lab Room",
+    time: "Oct 3, 2023 12:00:00",
+    register: "/events/sharkTankJolu/register",
+    leaderboard: "/events/sharkTankJolu/leaderboard",
+    prizes: [5000, 2000, 1000],
+  },
+  {
+    id: 12,
+    category: "caseStudy",
+    rules: [
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
+    ],
+    name: "Case Study",
+    eventCoordinators: [
+      {
+        name: "Aditi kumari",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1tVS3hZoghEDW1_d-irpgSDyI9gCKAbn6",
+        position: "event lead",
+        phone: "7407570466",
+        dept: "IT",
+        year: "3rd",
+        email: "123aditi.kr@gmail.com",
         isReverse: false,
       },
       {
-        name: "swadesh pal",
+        name: "Shreyashi Dasgupta",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=16ewsRuD_8FxK9amOpru16QOeEcizbVer",
+          "https://drive.google.com/uc?export=view&id=1uRSJRf62sUYtYxIR4FV56WlaCZuwB6gW",
         position: "event coordinator",
-        phone: "8436893969",
+        phone: "8327842765",
+        dept: "EE",
+        year: "3rd",
+        email: "shreyashidasgupta.apdj@gmail.com",
+        isReverse: true,
+      },
+      {
+        name: "Shreyan Majumdar",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1cXOaYMYB5yEI16cuuIF5qW8zERFTrBhE",
+        position: "event coordinator",
+        phone: "7797152845",
+        dept: "CSE",
+        year: "3rd",
+        email: "shreyanjalpaiguri@gmail.com",
+        isReverse: false,
+      },
+    ],
+    videoSrc: "/Video/video.mp4",
+    venue: "english lab Room",
+    time: "Oct 3, 2023 12:00:00",
+    register: "/events/sharkTankJolu/register",
+    leaderboard: "/events/sharkTankJolu/leaderboard",
+    prizes: [5000, 2000, 1000],
+  },
+  {
+    id: 13,
+    category: "troubleshooter",
+    rules: [
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
+    ],
+    name: "Troubleshooter",
+    eventCoordinators: [
+      {
+        name: "Shreya Dandapat",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+        position: "event lead",
+        phone: "8847850725",
         dept: "ME",
         year: "3rd",
-        email: "swadeshpal129@gmail.com",
+        email: "sd2564@me.jgec.ac.in",
+        isReverse: false,
+      },
+      {
+        name: "Riddhiman Tarafder ",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1RsW0a4fwV0xTH--voF8tGEL_QwpVuWrs",
+        position: "event coordinator",
+        phone: "7384597900",
+        dept: "ECE",
+        year: "3rd",
+        email: "rt2505@ece.jgec.ac.in",
+        isReverse: true,
+      },
+      {
+        name: "Shreya Dandapat",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+        position: "event coordinator",
+        phone: "8847850725",
+        dept: "ME",
+        year: "3rd",
+        email: "sd2564@me.jgec.ac.in",
+        isReverse: false,
+      },
+    ],
+    videoSrc: "/Video/video.mp4",
+    venue: "english lab Room",
+    time: "Oct 3, 2023 12:00:00",
+    register: "/events/sharkTankJolu/register",
+    leaderboard: "/events/sharkTankJolu/leaderboard",
+    prizes: [5000, 2000, 1000],
+  },
+  {
+    id: 13,
+    category: "techzibition",
+    rules: [
+      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
+      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
+      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
+    ],
+    name: "Troubleshooter",
+    eventCoordinators: [
+      {
+        name: "Shreya Dandapat",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+        position: "event lead",
+        phone: "8847850725",
+        dept: "ME",
+        year: "3rd",
+        email: "sd2564@me.jgec.ac.in",
+        isReverse: false,
+      },
+      {
+        name: "Riddhiman Tarafder ",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1RsW0a4fwV0xTH--voF8tGEL_QwpVuWrs",
+        position: "event coordinator",
+        phone: "7384597900",
+        dept: "ECE",
+        year: "3rd",
+        email: "rt2505@ece.jgec.ac.in",
+        isReverse: true,
+      },
+      {
+        name: "Shreya Dandapat",
+        imgSrc:
+          "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+        position: "event coordinator",
+        phone: "8847850725",
+        dept: "ME",
+        year: "3rd",
+        email: "sd2564@me.jgec.ac.in",
         isReverse: false,
       },
     ],
