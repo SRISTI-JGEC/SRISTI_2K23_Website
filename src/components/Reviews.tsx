@@ -20,7 +20,7 @@ const Reviews = () => {
     (async () => {
       try {
         const res = await axios.get("/api/reviews");
-        console.log(res.data);
+         
         setReviews(res.data.formated_reviews_object!)
       } catch (error) {
         console.log(error)
@@ -29,7 +29,7 @@ const Reviews = () => {
   }, [])
 
   return (
-    <div className="h-screen text-white">
+    <div className="min-h-[50vh] text-white mb-8">
       <div className=" flex  items-center flex-col md:text-start p-8 font-medium font-griffy">
         <p className="capitalize text-5xl sm:text-6xl text-white font-semibold">
           Reviews

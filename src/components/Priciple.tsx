@@ -12,7 +12,7 @@ const Priciple = () => {
         <Image
           src={stick}
           alt="stick"
-          className="w-[30rem] my-[-10px] max-sm:w-[10rem]"
+          className="w-[30rem] my-[-10px] max-sm:w-[18rem]"
           draggable={false}
         />
       </div>
@@ -24,7 +24,7 @@ const Priciple = () => {
           width={150}
           className="object-contain mr-5 max-sm:hidden"
         />
-        <div className="font-griffy p-6 relative w-[80%] min-h-full max-sm:w-full  bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
+        <div className="font-griffy p-6 relative w-full min-h-full max-sm:w-full  bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
           <p>
             Today the world economy is experiencing an unprecedented change. At
             present India stands as world&apos;s fifth largest economic power. Indian

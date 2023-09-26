@@ -89,12 +89,6 @@ const Footer = () => {
                 Login
               </Link>
 
-              <Link
-                href={'/registration'}
-                className="relative w-fit block after:block  after:h-[2px] after:bg-white after:w-full 
-                after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hover:text-fuchsia-100 transition-all">
-                Registrattion
-              </Link>
 
               <Link
                 href={'/events'}
@@ -102,6 +96,12 @@ const Footer = () => {
                 after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hover:text-fuchsia-100 transition-all">
                 Leaderboard
               </Link>
+                <Link
+                  href={'/review'}
+                  className="relative w-fit block after:block  after:h-[2px] after:bg-white after:w-full 
+                  after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hover:text-fuchsia-100 transition-all">
+                  reviews
+                </Link>
 
             </ul>
           </div>
