@@ -103,11 +103,7 @@ export default function Home() {
           <History />
         </div>
         <Reviews />
-<<<<<<< HEAD
         <Footer />
-=======
-        <Footer/>
->>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
       </div>
     </>
   );
