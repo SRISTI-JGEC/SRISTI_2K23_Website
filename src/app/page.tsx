@@ -4,7 +4,6 @@ import Reviews from "@/components/Reviews";
 import Priciple from "@/components/Priciple";
 import History from "@/components/History";
 import Image from "next/image";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
