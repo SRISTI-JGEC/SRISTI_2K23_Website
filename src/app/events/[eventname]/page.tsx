@@ -36,7 +36,7 @@ const Page = () => {
   }, 1000);
 
   function handleSubmit() {
-    router.push("/registration");
+    router.push("/registration?data=Mesmarise");
   }
 
   return (
