@@ -4,6 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { IoMdHome } from "react-icons/io";
+import { BsMicrosoftTeams } from "react-icons/bs";
+import { MdEmojiEvents } from "react-icons/md";
+import { FiLogOut } from "react-icons/fi";
 
 export default function NavBar() {
   const [closedNav, setClosedNav] = useState(false);
@@ -48,8 +52,8 @@ export default function NavBar() {
         <div
           className={
             closedNav
-              ? "w-full h-screen bg-[rgba(0,0,0)] backdrop-blur-md  z-50 fixed top-0 left-0 p-8"
-              : "hidden"
+              ? "w-full h-screen bg-[rgba(0,0,0)] backdrop-blur-md  z-50 fixed top-0 left-0 p-8 transition-all ease-linear duration-300"
+              : "hidden transition-all ease-linear duration-300"
           }
         >
           <div className="float-right" onClick={() => setClosedNav(!closedNav)}>
@@ -70,37 +74,37 @@ export default function NavBar() {
               />
             </Link>
           </div>
-          <ul className="flex justify-center items-center flex-col text-xl  mt-6">
+          <ul className="flex justify-center items-start flex-col text-xl  mt-6 w-[50%] mx-auto">
             <Link href={"/"}>
               <li
-                className="my-2 cursor-pointer capitalize text-xl"
+                className="my-2 cursor-pointer capitalize text-xl flex items-center"
                 onClick={() => setClosedNav(!closedNav)}
               >
-                Home
+                <IoMdHome className={"me-3"} size={25} /> Home
               </li>
             </Link>
             <Link href={"/events"}>
               <li
-                className="my-2 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize text-xl flex items-center"
                 onClick={() => setClosedNav(!closedNav)}
               >
-                Events
+                <MdEmojiEvents className={"me-3"} size={25} /> Events
               </li>
             </Link>
             <Link href={"/team"}>
               <li
-                className="my-2 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize text-xl flex items-center"
                 onClick={() => setClosedNav(!closedNav)}
               >
-                Teams
+                <BsMicrosoftTeams className={"me-3"} size={25} /> Teams
               </li>
             </Link>
             <Link href={"/login"}>
               <li
-                className="my-2 cursor-pointer capitalize"
+                className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
                 onClick={() => setClosedNav(!closedNav)}
               >
-                Log in
+                <FiLogOut className={"me-3"} size={25} /> Log out
               </li>
             </Link>
           </ul>

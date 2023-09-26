@@ -55,9 +55,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="text-white text-xl font-semibold  sm:text-4xl text-center pt-20r">
+          <div className="text-white text-xl font-semibold  sm:text-4xl text-center  font-griffy">
             <h1>
-              <span className="font-bold text-3xl">NORTH BENGAL’S</span> biggest
+              <span className="font-bold text-3xl sm:text-5xl">NORTH BENGAL’S</span> biggest
             </h1>
             <h1>Techno Management fest</h1>
           </div>
