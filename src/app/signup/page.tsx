@@ -336,11 +336,7 @@ const Page = () => {
               className="bg-[#f5f5f5] p-2 w-full my-5 text-black font-semibold text-lg  sm:text-2xl capitalize"
               onClick={handleSubmit}
             >
-<<<<<<< HEAD
               Sign up
-=======
-              Sign Up
->>>>>>> 70607b216ef279e8679cba1a5bc76eb5efbc8e67
             </button>
           </form>
           <p>
