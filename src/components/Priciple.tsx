@@ -5,14 +5,14 @@ import stick from "/public/Images/toppng.com-elder-wand1-harry-potter-wand-draw-
 const Priciple = () => {
   return (
     <div className="min-h-screen w-full p-2 flex flex-col">
-      <div className="p-[10px] flex flex-col items-start">
-        <div className="font-griffy text-[2.3rem] text-white tracking-wider mt-12 max-sm:text-[1.6rem]">
+      <div className="p-[10px] flex flex-col items-center">
+        <div className="font-griffy text-[2.5rem] text-white tracking-wider mt-12 max-sm:text-[1.6rem] ">
           From Priciples Desk
         </div>
         <Image
           src={stick}
           alt="stick"
-          className="w-[20rem] my-[-10px] max-sm:w-[10rem]"
+          className="w-[30rem] my-[-10px] max-sm:w-[18rem]"
           draggable={false}
         />
       </div>
@@ -24,7 +24,7 @@ const Priciple = () => {
           width={150}
           className="object-contain mr-5 max-sm:hidden"
         />
-        <div className="font-griffy relative w-[80%] min-h-full max-sm:w-full p-4 bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
+        <div className="font-griffy p-6 relative w-full min-h-full max-sm:w-full  bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
           <p>
             Today the world economy is experiencing an unprecedented change. At
             present India stands as world&apos;s fifth largest economic power. Indian
@@ -52,8 +52,9 @@ const Priciple = () => {
             Join hands as we shape the world of tomorrow.
           </p>
           <br/>
-          <h3 className="text-right">{"-- "}Dr. Amitava Ray</h3>
+          <h3 className="text-right">{"~ "}Dr. Amitava Ray</h3>
           <h3 className="text-right">Principal</h3>
+          <h3 className="text-right">JGEC</h3>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Heading from "@/components/Heading";
 import Reviews from "@/components/Reviews";
-import Sponsors from "@/components/Sponsors";
 import Priciple from "@/components/Priciple";
 import History from "@/components/History";
 import Image from "next/image";
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="h-screen w-full bg-home_bg overflow-y-scroll  bg-no-repeat bg-cover">
-        <div className="w-full max-w-[1300px] mt-24 min-h-screen mx-auto p-4">
+        <div className="w-full max-w-[1300px] pt-24 min-h-screen mx-auto p-4">
           <div className="flex md:flex-row flex-col items-center justify-evenly">
             <div>
               <Image
@@ -56,15 +55,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="text-white text-xl font-semibold  sm:text-4xl text-center pt-20r">
+          <div className="text-white text-xl font-semibold  sm:text-4xl text-center  font-griffy">
             <h1>
-              <span className="font-bold text-3xl">NORTH BENGAL’S</span> biggest
+              <span className="font-bold text-3xl sm:text-5xl">NORTH BENGAL’S</span> biggest
             </h1>
             <h1>Techno Management fest</h1>
           </div>
         </div>
         {/* ************************************* About section ******************************************** */}
-        <div className="w-full max-w-[1300px] mt-24 min-h-screen mx-auto p-4">
+        <div className="w-full max-w-[1300px] mt-20 min-h-auto mx-auto p-4">
           <Heading header={"About"} />
           <div className="flex flex-col md:flex-row justify-between ">
             <div className="flex flex-col">
@@ -80,27 +79,30 @@ export default function Home() {
                 <div className="absolute top-0 text-[#e4e4e4] w-[80%] mt-4 sm:mt-8">
                   <p className="text-sm sm:text-lg">
                     Welcome to Sristi, North Bengal&apos;s largest
-                    Techno-Management Fest!founded with a vision to inspire and
-                    nurture the leaders ,thinkers and creators of tomorrow,
+                    Techno-Management Fest! Founded with a vision to inspire and
+                    nurture the leaders, thinkers and creators of tomorrow,
                     Sristi has evolved into the biggest annual event in the
                     region. Our mission is to bridge the gap between academia
                     and industry, offering a diverse range of competitions,
-                    workshops and networking opportunities.With expert speakers,
-                    an innovation hub,and a focus on learning and growth, Sristi
-                    is more than an event, it&apos;s a moment.Join us in
-                    celebrating innovation, collaboration and excellence at
-                    Sristi, where we engineer a brighter tomorrow!
+                    workshops and networking opportunities. With expert
+                    speakers, an innovation hub, and a focus on learning and
+                    growth, Sristi is more than an event, it&apos;s a moment.
+                    Join us in celebrating innovation, collaboration and
+                    excellence at Sristi, where we engineer a brighter tomorrow!
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Priciple />
-        <History />
-        <Sponsors />
+        <div className="w-full max-w-[1300px] mt-8 min-h-screen mx-auto p-4">
+          <Priciple />
+        </div>
+        <div className="w-full max-w-[1300px] mt-8 min-h-auto mx-auto p-4">
+          <History />
+        </div>
         <Reviews />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

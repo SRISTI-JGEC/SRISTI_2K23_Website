@@ -22,7 +22,7 @@ const techeEvents = [
       { name: "rotolare", link: "/events/rotolare" },
       { name: "bridge the gap", link: "/events/bridgeTheGap" },
     ],
-    image: "/Images/batch2.png",
+    image: "/Images/batch3.png",
     inverted: true,
   },
   {
@@ -32,8 +32,9 @@ const techeEvents = [
       { name: "code chronicles", link: "/events/codeChronicles" },
       { name: "css battle", link: "/events/cssBattle" },
       { name: "capture the flag", link: "/events/captureTheFlag" },
+      { name: "Tech Quiz", link: "/events/techQuiz" },
     ],
-    image: "/Images/batch3.png",
+    image: "/Images/batch2.png",
     inverted: false,
   },
   {
@@ -41,17 +42,32 @@ const techeEvents = [
     category: "management",
     events: [
       { name: "shark tank jolu", link: "/events/sharkTankJolu" },
-      { name: "j-buzz", link: "/events/jBuzz" },
+      // { name: "j-buzz", link: "/events/jBuzz" },
+      { name: "Model Parliament", link: "/events/modelParliament" },
+      { name: "Case Study ", link: "/events/caseStudy " },
+      { name: "Troubleshooter ", link: "/events/troubleshooter  " },
     ],
     image: "/Images/batch5.png",
     inverted: true,
   },
+
   {
     id: 5,
     category: "exhibition",
     events: [{ name: "techzibition", link: "/events/techzibition" }],
-    image: "/Images/Batch1.png",
+    image: "/Images/batch1.png",
     inverted: false,
+  },
+  {
+    id: 6,
+    category: "IQ",
+    events: [
+      { name: "chess", link: "/events/chess" },
+      { name: "mathemania", link: "/events/mathemania" },
+      { name: "code hunt", link: "/events/codeHunt" },
+    ],
+    image: "/Images/batch3.png",
+    inverted: true,
   },
 ];
 
@@ -61,7 +77,7 @@ const page = () => {
       <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
         <motion.div className="relative text-white mb-2">
           <div className=" flex justify-center items-center flex-col mt-24">
-            <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold ">
+            <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold font-griffy">
               Events
             </h1>
             <Image

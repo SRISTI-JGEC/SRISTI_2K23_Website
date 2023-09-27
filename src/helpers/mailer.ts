@@ -1,7 +1,7 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 import User from "@/models/userModel";
 import Team from "@/models/teamModel";
-import bcryptjs from 'bcryptjs';
+import bcryptjs from "bcryptjs";
 
 export const sendEmail = async({email, emailType, userId, teamId, eventName, teamName}:any) => {
     try {
@@ -15,11 +15,10 @@ export const sendEmail = async({email, emailType, userId, teamId, eventName, tea
             await User.findByIdAndUpdate(userId, {forgotPasswordToken: hashedToken, forgotPasswordTokenExpiry: Date.now() + 3600000});
         } 
         else if (emailType === "INVITATION"){
-            const res = await Team.findOneAndUpdate({_id: teamId, "members._id" : userId}, {
+            await Team.findOneAndUpdate({_id: teamId, "members._id" : userId}, {
                 "members.$.verifyToken" : hashedToken,
                 "members.$.verifyTokenExpiry" : Date.now() + 86400000
             });
-            console.log(res);
         }
         
         const link = `${process.env.DOMAIN}/${emailType === "VERIFY" ? "verifyEmail" : (emailType === "RESET") ? "forgotPassword" : "acceptInvitation"}?token=${hashedToken}`;
@@ -45,13 +44,12 @@ export const sendEmail = async({email, emailType, userId, teamId, eventName, tea
             <br>
             or copy and paste the link below in your browser. 
             <br> ${link}
-            </p>`
-        }
+            </p>`,
+    };
 
-        const mailresponse = await transport.sendMail(mailOptions);
-        return mailresponse;
-
-    } catch (error:any) {
-        throw new Error(error.message);
-    }
-}
+    const mailresponse = await transport.sendMail(mailOptions);
+    return mailresponse;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};

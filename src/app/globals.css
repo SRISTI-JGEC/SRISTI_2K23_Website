@@ -5,10 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Oswald&family=Poppins&family=Satisfy&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 
-/* *::-webkit-scrollbar{
+*::-webkit-scrollbar{
     scroll-behavior: smooth;
     display: none;
-} */
+}
 /* Scrollbar Track */
 ::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */

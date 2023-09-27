@@ -62,7 +62,7 @@ const studentsDetails = [
     name: "Abhgyan Prakash Singh",
     designation: "Treasurer",
     imgLink:
-      "https://drive.google.com/uc?export=view&id=1lpieo-tBY5SAK0zgRfVsYc0-IKtYmSzh",
+      "https://drive.google.com/uc?export=view&id=1_rU-4rEW-IUrCrWF6ETXe81YLjnP5iGv",
   },
   {
     name: "Sumit Mazumdar ",

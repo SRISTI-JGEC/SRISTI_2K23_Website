@@ -34,9 +34,9 @@ const EventCard = ({ props }: { props: EventCardProps }) => {
       />
       <div
         className="md:w-full bg-black/40 hover:bg-black/50 transition-all duration-150 
-            hover:backdrop-blur-sm  md:h-[16rem] rounded-md p-5 md:p-7 md:px-36 border border-transparent hover:border-y-white/30"
+            hover:backdrop-blur-sm  md:min-h-[16rem] rounded-md p-5 md:p-3 md:px-36 border border-transparent "
       >
-        <p className="text-2xl sm:text-4xl text-center md:text-start font-semibold  ps-4 capitalize text-yellow-100">
+        <p className="text-2xl sm:text-4xl text-center md:text-start font-semibold  ps-4 capitalize text-yellow-100 font-griffy">
           {props.category} :
         </p>
         <>
