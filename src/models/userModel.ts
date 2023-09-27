@@ -43,6 +43,12 @@ const userSchema = new mongoose.Schema({
         required: [true, "Please provide a payRecipt Number"],
         unique: true
     },
+    participation : [
+        {
+            eventName : String,
+            teamId : String
+        }
+    ],
     forgotPasswordToken: String,
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,

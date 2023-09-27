@@ -1,27 +1,21 @@
 import mongoose from "mongoose";
 
 const teamSchema = new mongoose.Schema({
-    teamName: {
-        type: String,
-        required: [true, "Please provide a username"]
-    },
+    teamName: String,
     eventName: {
         type: String,
         required: [true, "Please provide an Event Name"]
     },
-    leadEmail: {
+    leadId: {
         type: String,
-        required: [true, "Please provide Leader's email"]
+        required: [true, "Please provide Leader's userId"]
     },
     members : [
         {
             email : String,
-            isVerified : {
-                type: Boolean,
-                default: false
-            },
-            verifyToken: String,
-            verifyTokenExpiry: Date
+            userId : String || null,
+            verifyToken: String || null,
+            verifyTokenExpiry: Date || null
 
         }
     ]
