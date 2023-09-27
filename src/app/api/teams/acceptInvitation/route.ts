@@ -8,24 +8,34 @@ connect();
 export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
-    const { token } = reqBody;
+    const { token, userId } = reqBody;
 
     const team = await Team.findOne({
       "members.verifyToken": token,
       "members.verifyTokenExpiry": { $gt: Date.now() },
     });
 
+    console.log(team);
     if (!team) {
       return NextResponse.json({ error: "Invalid token" }, { status: 400 });
     }
     await Team.findOneAndUpdate(
       { _id: team._id, "members.verifyToken": token },
       {
-          "members.$.isVerified": true,
-          "members.$.verifyToken":null,
-        "members.$.verifyTokenExpiry":null,
+        "members.$.userId": userId,
+        "members.$.verifyToken": null,
+        "members.$.verifyTokenExpiry": null,
       }
     );
+
+    await User.findByIdAndUpdate(userId, {
+      $push : {
+        participation : {
+          eventName : team.eventName,
+          teamId : team._id
+        }
+      }
+    })
 
     return NextResponse.json({
       message: "Invitation Accepted successfully",
