@@ -2,13 +2,18 @@ import connect from "@/dbConfig/dbConfig";
 import { NextRequest, NextResponse } from "next/server";
 import User from "@/models/userModel";
 import Team from "@/models/teamModel";
+import jwt from "jsonwebtoken"
 
 connect();
 
 export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
-    const { token, userId } = reqBody;
+    const userToken = request.cookies.get("token")?.value || "";
+    const userId = jwt.verify(userToken, process.env.TOKEN_SECRET!)?.id || "";
+    console.log(userId);
+    const { token } = reqBody;
+    console.log(token);
 
     const team = await Team.findOne({
       "members.verifyToken": token,

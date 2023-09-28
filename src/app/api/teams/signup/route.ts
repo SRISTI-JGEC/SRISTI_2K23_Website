@@ -3,6 +3,7 @@ import User from "@/models/userModel";
 import Team from "@/models/teamModel";
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail } from "@/helpers/mailer";
+import jwt from 'jsonwebtoken'
 
 connect();
 
@@ -10,7 +11,9 @@ export async function POST(request: NextRequest){
     try {
 
         const reqBody = await request.json();
-        const {teamName, eventName, leadId, members} = reqBody;
+        const {teamName, eventName, members} = reqBody;
+        const token = request.cookies.get("token")?.value || "";
+        const leadId = jwt.verify(token, process.env.TOKEN_SECRET)?.id || "";
 
         const user = await User.findOne({_id : leadId, participation : {$exists: true, $ne: []}, "participation.eventName" : eventName});
         console.log(user);
