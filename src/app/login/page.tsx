@@ -41,9 +41,8 @@ const Page = () => {
         email,
         password,
       });
-      // show some effect to user or redirect to home
-      console.log(res);
       route.push("/");
+      
     } catch (error) {
       console.log(error);
     }
