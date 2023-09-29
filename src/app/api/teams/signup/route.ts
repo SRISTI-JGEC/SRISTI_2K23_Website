@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     const token = request.cookies.get("token")?.value || "";
     const { _id } = jwt.verify(
       token,
-      process.env.TOKEN_SECRET || ""
+      process.env.TOKEN_SECRET!
     ) as JwtPayload;
 
     const user = await User.findOne({
