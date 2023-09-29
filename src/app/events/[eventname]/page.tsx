@@ -35,7 +35,8 @@ export type EventData = {
   videoSrc: string;
   venue: String;
   time: String;
-  pptLink: String,
+  prelimsDate: String;
+  pptLink: string;
   register: String;
   leaderboard: string;
   prizes: number[];
@@ -131,6 +132,19 @@ const Page = () => {
                     })}
                   </ol>
                 </div>
+              </div>
+              <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
+                <button
+                  className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider"
+                  onClick={(e) => setOpenTab(true)}
+                >
+                  Register Now
+                </button>
+                <Link href={eventData ? eventData.pptLink : ""}>
+                  <button className="capitalize py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                    download PPT
+                  </button>
+                </Link>
               </div>
             </div>
             <div className=" min-h-screen p-4 sm:p-10 flex justify-center items-center flex-col bg-center bg-cover bg-no-repeat">
@@ -242,7 +256,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <RegisterTeamList/>
+          <RegisterTeamList />
         </>
       ) : (
         <div className="w-full h-screen absolute top-0 left-0 ">

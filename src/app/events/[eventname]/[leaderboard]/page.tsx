@@ -90,7 +90,7 @@ const LeaderBoard = () => {
                   height={200}
                   className="object-cover "
                 />
-                <div className="w-full min-h-24 rounded-lg bg-[#BA704F] ">
+                <div className="w-full min-h-24 rounded-lg bg-[#E87A42] ">
                   <ul className="p-4">
                     <li className="text-xl font-semibold text-center mb-2">
                       Team <span className="capitalize">geronimo</span>

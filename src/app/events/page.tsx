@@ -32,7 +32,6 @@ const techeEvents = [
       { name: "code chronicles", link: "/events/codeChronicles" },
       { name: "css battle", link: "/events/cssBattle" },
       { name: "capture the flag", link: "/events/captureTheFlag" },
-      { name: "Tech Quiz", link: "/events/techQuiz" },
     ],
     image: "/Images/batch2.png",
     inverted: false,
@@ -42,9 +41,7 @@ const techeEvents = [
     category: "management",
     events: [
       { name: "shark tank jolu", link: "/events/sharkTankJolu" },
-      // { name: "j-buzz", link: "/events/jBuzz" },
-      { name: "Model Parliament", link: "/events/modelParliament" },
-      { name: "Case Study ", link: "/events/caseStudy " },
+      { name: "g-mun", link: "/events/gmun" },
       { name: "Troubleshooter ", link: "/events/troubleshooter  " },
     ],
     image: "/Images/batch5.png",
@@ -53,14 +50,19 @@ const techeEvents = [
 
   {
     id: 5,
-    category: "exhibition",
-    events: [{ name: "techzibition", link: "/events/techzibition" }],
+    category: "Tech-mania",
+    events: [
+      { name: "techzibition", link: "/events/techzibition" },
+      { name: "intra Ricerca", link: "/events/intraRicerca" },
+      { name: "Tech Quiz", link: "/events/techQuiz" },
+    ],
+
     image: "/Images/batch1.png",
     inverted: false,
   },
   {
     id: 6,
-    category: "IQ",
+    category: "J-Buzz",
     events: [
       { name: "chess", link: "/events/chess" },
       { name: "mathemania", link: "/events/mathemania" },
