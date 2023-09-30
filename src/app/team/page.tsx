@@ -22,7 +22,7 @@ function page() {
           initial={{ opacity: 0, y: 75 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-center font-bold text-3xl lg:text-6xl "
+          className="text-center font-bold text-3xl lg:text-6xl  font-griffy"
         >
           Our Team
           <Image

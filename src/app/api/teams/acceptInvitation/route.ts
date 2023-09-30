@@ -5,7 +5,7 @@ import Team from "@/models/teamModel";
 import jwt from "jsonwebtoken";
 import { unescape } from "querystring";
 interface JwtPayload {
-  _id: string;
+  id: string;
 }
 
 connect();

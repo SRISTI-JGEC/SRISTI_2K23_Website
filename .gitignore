@@ -7,6 +7,17 @@
 # testing
 /coverage
 
+#folders
+acceptInvitation
+ teams
+ users
+ login
+ logout
+ profile
+ signup
+ verifyEmail
+ helpers
+ middleware.ts
 # next.js
 /.next/
 /out/

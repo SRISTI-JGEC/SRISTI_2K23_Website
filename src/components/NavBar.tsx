@@ -7,14 +7,12 @@ import { faBars, faXmark, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IoMdHome } from "react-icons/io";
 import { BsMicrosoftTeams } from "react-icons/bs";
 import { MdEmojiEvents } from "react-icons/md";
-import { FiLogOut } from "react-icons/fi";
+import { MdFeedback } from "react-icons/md";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 export default function NavBar() {
   const [closedNav, setClosedNav] = useState(false);
-  const [token, setToken] = useState<string | null>(null);
-  // useEffect(() => {
-  //   setToken(localStorage.getItem("token"));
-  // }, []);
+   
 
   return (
     <>
@@ -32,29 +30,28 @@ export default function NavBar() {
         </div>
         <ul className="flex justify-center items-center text-xl max-sm:hidden">
           <Link href={"/"}>
-            <li className="mx-4 cursor-pointer capitalize">Home</li>
+            <li className="mx-4 cursor-pointer capitalize underlineStyle">
+              Home
+            </li>
           </Link>
           <Link href={"/events"}>
-            <li className="mx-4 cursor-pointer capitalize">Events</li>
+            <li className="mx-4 cursor-pointer capitalize underlineStyle">
+              Events
+            </li>
           </Link>
           <Link href={"/team"}>
-            <li className="mx-4 cursor-pointer capitalize">Teams</li>
+            <li className="mx-4 cursor-pointer capitalize underlineStyle">
+              Teams
+            </li>
           </Link>
-          {token ? (
-            <Link
-              href={"/logout"}
-              onClick={() => setToken(null)}
-            >
-              <li className="mx-4 cursor-pointer capitalize">Log out</li>
-            </Link>
-          ) : (
-            <Link
-              href={"/login"}
-              onClick={() => setToken(localStorage.getItem("token"))}
-            >
-              <li className="mx-4 cursor-pointer capitalize">Log in</li>
-            </Link>
-          )}
+          <Link href={"/sponsors"}>
+            <li className="mx-4 cursor-pointer capitalize underlineStyle">
+              sponsors
+            </li>
+          </Link>
+          <Link href={"/review"}>
+            <li className="mx-4 cursor-pointer capitalize underlineStyle">review</li>
+          </Link>
         </ul>
         <div
           className="max-sm:flex hidden"
@@ -116,30 +113,22 @@ export default function NavBar() {
                 <BsMicrosoftTeams className={"me-3"} size={25} /> Teams
               </li>
             </Link>
-            {token ? (
-              <Link href={"/logout"}>
-                <li
-                  className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
-                  onClick={() => {
-                    setClosedNav(!closedNav), setToken(null);
-                  }}
-                >
-                  <FiLogOut className={"me-3"} size={25} /> Log out
-                </li>
-              </Link>
-            ) : (
-              <Link href={"/login"}>
-                <li
-                  className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
-                  onClick={() => {
-                    setClosedNav(!closedNav),
-                      setToken(localStorage.getItem("token"));
-                  }}
-                >
-                  <FiLogOut className={"me-3"} size={25} /> Log in
-                </li>
-              </Link>
-            )}
+            <Link href={"/sponsors"}>
+              <li
+                className="my-2 cursor-pointer capitalize text-xl flex items-center"
+                onClick={() => setClosedNav(!closedNav)}
+              >
+                <BiSolidDonateHeart className={"me-3"} size={25} /> sponsors
+              </li>
+            </Link>
+            <Link href={"/review"}>
+              <li
+                className="my-2 cursor-pointer capitalize text-xl flex items-center"
+                onClick={() => setClosedNav(!closedNav)}
+              >
+                <MdFeedback className={"me-3"} size={25} /> review us
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

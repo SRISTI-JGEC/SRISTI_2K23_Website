@@ -56,7 +56,7 @@ export const EventList: EventData[] = [
     prelimsDate: "6th Oct, 10PM-12AM",
     time: "Oct 7, 2023 24:00:00",
     pptLink:
-      "https://drive.google.com/file/d/1JgWCI_NWPAXeD2j26CVxW2tOEj-H9OYI/view?usp=drive_link",
+      "https://drive.google.com/file/d/1b-xxfkL9Yk8zabG41OkqxTf-y7sAZfux/view?usp=sharing",
     register: "/events/mazemarize/register",
     leaderboard: "/events/mazemarize/leaderboard",
     prizes: [5000, 2000, 1000],
@@ -80,7 +80,7 @@ export const EventList: EventData[] = [
       {
         name: "Asanka Maiti",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=1YhbJfZZLYTwjsEEW0SWnLRpExiPDZkyb",
+          "https://drive.google.com/uc?export=view&id=1a7tWeLx9SqCyOsVr6k1OoiliozJp0zaC",
         position: "event lead",
         phone: "7797307847",
         dept: "ECE",
@@ -117,7 +117,8 @@ export const EventList: EventData[] = [
     time: "Oct 8, 2023 22:00:00",
     pptLink:
       "https://drive.google.com/file/d/192YqtoNW_N1_MhE7VSd7AyCJh-DTzlu2/view?usp=sharing",
-    register: "/events/roboSoccer/register",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdJBapHllqv98muNTmzSWVsiTek_zr17g062W2H6Nu0mpFGpA/viewform",
     leaderboard: "/events/roboSoccer/leaderboard",
     prizes: [8000, 5000, 3000],
   },
@@ -181,7 +182,8 @@ export const EventList: EventData[] = [
     time: "Oct 7, 2023 15:30:00",
     pptLink:
       "https://drive.google.com/file/d/1DEnBvZuRzEzKAa4OaBaIm_gc9bN478OO/view?usp=sharing",
-    register: "/events/sputnik/register",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfgX1ZRIRc2So39RrmN9l4jjLRZ4qlgkQII3YFnDkMfG_B3BA/viewform",
     leaderboard: "/events/sputnik/leaderboard",
     prizes: [5000, 3000, 2000],
   },
@@ -239,7 +241,7 @@ export const EventList: EventData[] = [
     time: "Oct 5, 2023 23:30:00",
     pptLink:
       "https://drive.google.com/file/d/1iEDh3BiDPzbizGnIvBBzAeZarxPzW4WY/view?usp=sharing",
-    register: "/events/rotolare/register",
+    register: "https://forms.gle/WirGziPnbCGd6bWLA",
     leaderboard: "/events/rotolare/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -300,7 +302,7 @@ export const EventList: EventData[] = [
     time: "Oct 6, 2023 24:00:00",
     pptLink:
       "https://drive.google.com/file/d/1UzfRqsqOrd8rTvgVWeVCHyjfs1BCio5X/view?usp=sharing",
-    register: "/events/bridgeTheGap/register",
+    register: "https://forms.gle/Auv7pGExGwMQdQab6",
     leaderboard: "/events/bridgeTheGap/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -356,7 +358,8 @@ export const EventList: EventData[] = [
     time: "Oct 6, 2023 16:00:00",
     pptLink:
       "https://drive.google.com/file/d/16LrO_FTY6tp8pOksdoLFEqQmVPLL34bg/view?usp=sharing",
-    register: "/events/codeChronicles/register",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfiAtEh0SPzFReS1dqKsddrznC9Do3ZtKAxHQi2pu1Zz9mG0A/viewform",
     leaderboard: "/events/codeChronicles/leaderboard",
     prizes: [1723, 1024, 576],
   },
@@ -409,7 +412,7 @@ export const EventList: EventData[] = [
     prelimsDate: "8th Oct, 5PM - 7PM",
     time: "Oct 8, 2023 19:00:00",
     pptLink: "",
-    register: "/events/cssBattle/register",
+    register: "",
     leaderboard: "/events/cssBattle/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -463,7 +466,7 @@ export const EventList: EventData[] = [
     time: "Oct 7, 2023 24:00:00",
     pptLink:
       "https://drive.google.com/file/d/1qXRUwWrtW9Jf7awrhqHr26Hh0S_p9uUB/view?usp=sharing",
-    register: "/events/captureTheFlag/register",
+    register: "",
     leaderboard: "/events/captureTheFlag/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -516,8 +519,9 @@ export const EventList: EventData[] = [
     prelimsDate: "",
     time: "Oct 8, 2023 14:00:00",
     pptLink:
-      "https://drive.google.com/file/d/14OczNX3omVrDf-ONoYPa96oZFCPj7PjO/view?usp=sharing",
-    register: "/events/sharkTankJolu/register",
+      "https://drive.google.com/file/d/1Wq2UowYc7md5R7VAH9Vc_chmlGS3X0XF/view?usp=sharing",
+    register:
+      "https://docs.google.com/forms/d/1DNZO4Ifvf5qkEZNg-qlOw_NT7NrtuduSNqHOWJUYDco/edit?chromeless=1",
     leaderboard: "/events/sharkTankJolu/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -573,7 +577,8 @@ export const EventList: EventData[] = [
     time: "Oct 7, 2023 18:00:00",
     pptLink:
       "https://drive.google.com/file/d/1a6c-_Uvjwsii23KC4kdM3k5HsPiN8ATB/view?usp=sharing",
-    register: "/events/modelParliament/register",
+    register:
+      "https://docs.google.com/forms/d/1YCtk4oJHtkuXr3U3wi5WXFtkoyWf6zyGUXNeDv56trs/viewform?edit_requested=true",
     leaderboard: "/events/modelParliament/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -628,18 +633,15 @@ export const EventList: EventData[] = [
     time: "Oct 7, 2023 14:00:00",
     pptLink:
       "https://drive.google.com/file/d/1ZY2s4x8eYrxQvw1MpMfqgJXmNRuH9EkS/view?usp=sharing",
-    register: "/events/caseStudy/register",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeOrWximulh3ROzrd06OFXeQomA-oH9nySY5GbgOdQLcshGUA/formrestricted",
     leaderboard: "/events/caseStudy/leaderboard",
     prizes: [5000, 2000, 1000],
   },
   {
     id: 12,
     category: "troubleshooter",
-    rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
-      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
-      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
-    ],
+    rules: [""],
     name: "Troubleshooter",
     eventCoordinators: [
       {
@@ -682,7 +684,7 @@ export const EventList: EventData[] = [
     time: "Oct 6, 2023 18:00:00",
     pptLink:
       "https://drive.google.com/file/d/1yarPtiTDRnHPw3a820DmAAApg8LkKwT8/view?usp=sharing",
-    register: "/events/troubleshooter/register",
+    register: "https://forms.gle/7bnQ388trSJYE3eH6",
     leaderboard: "/events/troubleshooter/leaderboard",
     prizes: [1000, 800, 600],
   },
@@ -747,7 +749,7 @@ export const EventList: EventData[] = [
     time: "Oct 8, 2023 10:00:00",
     pptLink:
       "https://drive.google.com/file/d/1GXF9JWx4syM9TNoc06fffgacuKwkP9D8/view?usp=sharing",
-    register: "/events/techzibition/register",
+    register: "",
     leaderboard: "/events/techzibition/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -800,7 +802,7 @@ export const EventList: EventData[] = [
     time: "Oct 7, 2023 10:00:00",
     pptLink:
       "https://drive.google.com/file/d/1xYx1GBLbNNILyStQ4jvnkjZP9ERuhh9N/view?usp=sharing",
-    register: "/events/techQuiz/register",
+    register: "",
     leaderboard: "/events/techQuiz/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -853,7 +855,7 @@ export const EventList: EventData[] = [
     time: "Oct 8, 2023 19:00:00",
     pptLink:
       "https://drive.google.com/file/d/17t4OZolTCwfANCE_34EI5wuJNZhI-Jls/view?usp=sharing",
-    register: "/events/chess/register",
+    register: "",
     leaderboard: "/events/chess/leaderboard",
     prizes: [5000, 2000, 1000],
   },
@@ -964,7 +966,7 @@ export const EventList: EventData[] = [
     time: "Oct 5, 2023 22:30:00",
     pptLink:
       "https://drive.google.com/file/d/1vd3NEa__WbQ9I5Vs0hbS8JgvtljdVsJN/view?usp=sharing",
-    register: "/events/codeHunt/register",
+    register: "",
     leaderboard: "/events/codeHunt/leaderboard",
     prizes: [5000, 2000, 1000],
   },
