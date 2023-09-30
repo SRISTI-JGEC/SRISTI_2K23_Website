@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IoMdHome } from "react-icons/io";
@@ -11,6 +11,11 @@ import { FiLogOut } from "react-icons/fi";
 
 export default function NavBar() {
   const [closedNav, setClosedNav] = useState(false);
+  const [token, setToken] = useState<string | null>(null);
+  // useEffect(() => {
+  //   setToken(localStorage.getItem("token"));
+  // }, []);
+
   return (
     <>
       <div className="w-full h-20 bg-gray-800/40 backdrop-blur-md fixed top-0 z-40 flex justify-between items-center max-sm:px-4 px-12 text-white font-griffy">
@@ -35,9 +40,21 @@ export default function NavBar() {
           <Link href={"/team"}>
             <li className="mx-4 cursor-pointer capitalize">Teams</li>
           </Link>
-          <Link href={"/login"}>
-            <li className="mx-4 cursor-pointer capitalize">Log in</li>
-          </Link>
+          {token ? (
+            <Link
+              href={"/logout"}
+              onClick={() => setToken(null)}
+            >
+              <li className="mx-4 cursor-pointer capitalize">Log out</li>
+            </Link>
+          ) : (
+            <Link
+              href={"/login"}
+              onClick={() => setToken(localStorage.getItem("token"))}
+            >
+              <li className="mx-4 cursor-pointer capitalize">Log in</li>
+            </Link>
+          )}
         </ul>
         <div
           className="max-sm:flex hidden"
@@ -99,14 +116,30 @@ export default function NavBar() {
                 <BsMicrosoftTeams className={"me-3"} size={25} /> Teams
               </li>
             </Link>
-            <Link href={"/login"}>
-              <li
-                className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
-                onClick={() => setClosedNav(!closedNav)}
-              >
-                <FiLogOut className={"me-3"} size={25} /> Log out
-              </li>
-            </Link>
+            {token ? (
+              <Link href={"/logout"}>
+                <li
+                  className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
+                  onClick={() => {
+                    setClosedNav(!closedNav), setToken(null);
+                  }}
+                >
+                  <FiLogOut className={"me-3"} size={25} /> Log out
+                </li>
+              </Link>
+            ) : (
+              <Link href={"/login"}>
+                <li
+                  className="my-2 cursor-pointer capitalize text-xl flex items-center text-red-500"
+                  onClick={() => {
+                    setClosedNav(!closedNav),
+                      setToken(localStorage.getItem("token"));
+                  }}
+                >
+                  <FiLogOut className={"me-3"} size={25} /> Log in
+                </li>
+              </Link>
+            )}
           </ul>
         </div>
       </div>

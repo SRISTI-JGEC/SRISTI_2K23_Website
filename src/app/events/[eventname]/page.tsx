@@ -32,7 +32,7 @@ export type EventData = {
   rules: String[];
   name: String;
   eventCoordinators: eventCoordinatorSchema[];
-  videoSrc: string;
+  img: string;
   venue: String;
   time: String;
   prelimsDate: String;
@@ -47,17 +47,21 @@ const Page = () => {
   const { eventname } = useParams();
   const [openTab, setOpenTab] = useState<boolean>(false);
   const [eventData, setEventData] = useState<EventData | undefined>(undefined);
+  const [time, setTime] = useState<any>("Oct 3, 2023 12:00:00");
   const findEvent = () => {
     const event = EventList.find((items) => items.category === eventname);
     if (event !== undefined) {
       setEventData(event);
+      if (event.time) {
+        setTime(event.time);
+      }
     }
   };
 
   useEffect(() => {
     findEvent();
   }, []);
-  const eventStartTime = new Date("Oct 3, 2023 12:00:00").getTime();
+  const eventStartTime = new Date(time).getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
@@ -75,10 +79,6 @@ const Page = () => {
     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
     setTimeLeft({ days, hours, minutes, seconds });
   }, 1000);
-
-  function handleSubmit() {
-    router.push("/registration");
-  }
 
   return (
     <>
@@ -108,9 +108,16 @@ const Page = () => {
               </div>
               <div className="relative my-[2rem] flex justify-between items-center p-[2rem] sm:bg-[rgba(0,0,0,0.4)] sm:backdrop-blur-[5px] rounded-[7px] w-[90%] max-[640px]:flex-col max-[640px]:w-[100%] max-[640px]:p-1 max-[640px]:justify-start">
                 <div className="relative flex items-center max-[640px]:h-[10rem] max-[640px]:mb-[30px]">
-                  <video controls className="w-[30rem] relative">
+                  {/* <video controls className="w-[30rem] relative">
                     <source src={"/Video/video.mp4"} type="video/mp4" />
-                  </video>
+                  </video> */}
+                  <Image
+                    src={eventData ? eventData.img : ""}
+                    alt="event image"
+                    width={300}
+                    height={300}
+                    className="w-[30rem] relative object-cover"
+                  />
                 </div>
                 <div className="relative min-h-[25rem] bg-rule-bg bg-no-repeat bg-cover bg-center w-[55%] min-w-[45%] flex flex-col items-center justify-start max-[640px]:w-[100%] max-[640px]:min-h-[20rem] py-2 max-sm:mt-6">
                   <div className="font-griffy text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem] ">
@@ -202,7 +209,14 @@ const Page = () => {
               <h2 className="text-[3rem] font-griffy max-[640px]:text-2xl max-[280px]:text-[1rem] py-4 capitalize">
                 Venue: {eventData?.venue}
               </h2>
-
+              {eventData?.prelimsDate ? (
+                <h3 className="text-gray-200 text-xl sm:text-4xl font-griffy font-medium my-3">
+                  <span className="text-white">Prelims : </span>
+                  {eventData?.prelimsDate}
+                </h3>
+              ) : (
+                <></>
+              )}
               <div className="timer flex w-[50rem] justify-between sm:my-[3rem] items-center font-griffy max-[640px]:w-[90%]">
                 <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
                   <p className="text-7xl max-[640px]:text-xl">
@@ -238,8 +252,8 @@ const Page = () => {
                   </span>
                 </div>
               </div>
-              <h1 className="text-gray-200 text-2xl sm:text-3xl font-griffy font-medium">
-                We are staring soon
+              <h1 className="text-gray-200 text-2xl sm:text-3xl font-griffy font-medium my-3">
+                Be ready for the final round
               </h1>
               <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
                 <button

@@ -45,10 +45,12 @@ const Page = () => {
         password,
       });
       setLoading(false);
+      console.log(res);
+      localStorage.setItem("token",res.data.token)
       route.push("/");
     } catch (error) {
       setLoading(false);
-      alert("something went wrong, try again latter");
+      alert("user not verified or something went wrong, try again latter");
       console.log(error);
     }
   };

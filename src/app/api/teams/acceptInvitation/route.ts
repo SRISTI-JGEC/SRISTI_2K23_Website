@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import User from "@/models/userModel";
 import Team from "@/models/teamModel";
 import jwt from "jsonwebtoken";
+import { unescape } from "querystring";
 interface JwtPayload {
   _id: string;
 }
@@ -13,33 +14,32 @@ export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
     const userToken = request.cookies.get("token")?.value || "";
-    const { _id } = jwt.verify(
+    const { id } = jwt.verify(
       userToken,
       process.env.TOKEN_SECRET!
     ) as JwtPayload;
-    console.log(_id);
+    console.log(id);
     const { token } = reqBody;
     console.log(token);
-
+    const newToken = unescape(token);
     const team = await Team.findOne({
-      "members.verifyToken": token,
+      "members.verifyToken": newToken,
       "members.verifyTokenExpiry": { $gt: Date.now() },
     });
-
     console.log(team);
     if (!team) {
       return NextResponse.json({ error: "Invalid token" }, { status: 400 });
     }
     await Team.findOneAndUpdate(
-      { _id: team._id, "members.verifyToken": token },
+      { _id: team._id, "members.verifyToken": newToken },
       {
-        "members.$.userId": _id,
+        "members.$.userId": id,
         "members.$.verifyToken": null,
         "members.$.verifyTokenExpiry": null,
       }
     );
 
-    await User.findByIdAndUpdate(_id, {
+    await User.findByIdAndUpdate(id, {
       $push: {
         participation: {
           eventName: team.eventName,

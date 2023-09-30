@@ -12,6 +12,8 @@ import {
   BsFillTelephoneFill,
   BsFillTelephonePlusFill,
 } from "react-icons/bs";
+import axios from "axios";
+import { eventNames } from "process";
 
 const EventRegistration = ({ props }: { props: EventData }) => {
   const router = useRouter();
@@ -55,10 +57,27 @@ const EventRegistration = ({ props }: { props: EventData }) => {
   const onSubmit = async (data: any) => {
     console.log(props);
     console.log(data);
+    // teamName, eventName, members;
+    const {
+      member4number,
+      member4name,
+      member3number,
+      member3name,
+      member2number,
+      member2name,
+      teamname,
+    } = data;
+    const res = await axios.post("/api/teams/signup", {
+      teamName: teamname,
+      eventName: props.name,
+      members: [
+        { name: member2name, email: member2number },
+        { name: member3name, email: member3number },
+        { name: member4name, email: member4number },
+      ],
+    });
+    console.log(res);
     toast.success("Successfully Registered!");
-    setTimeout(() => {
-      router.push("/");
-    }, 300);
   };
 
   return (

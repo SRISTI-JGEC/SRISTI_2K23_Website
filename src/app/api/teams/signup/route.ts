@@ -7,21 +7,20 @@ import jwt from "jsonwebtoken";
 
 connect();
 interface JwtPayload {
-  _id: string;
+  id: string;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
     const { teamName, eventName, members } = reqBody;
+    console.log(teamName, eventName);
+    console.log(members);
     const token = request.cookies.get("token")?.value || "";
-    const { _id } = jwt.verify(
-      token,
-      process.env.TOKEN_SECRET!
-    ) as JwtPayload;
-
+    const { id } = jwt.verify(token, process.env.TOKEN_SECRET!) as JwtPayload;
+    console.log(id);
     const user = await User.findOne({
-      _id,
+      id,
       participation: { $exists: true, $ne: [] },
       "participation.eventName": eventName,
     });
@@ -36,29 +35,35 @@ export async function POST(request: NextRequest) {
 
     if (members) {
       for (let i = 0; i < members.length; i++) {
-        const user2 = await User.findOne({
-          email: members[i].email,
-          participation: { $exists: true, $ne: [] },
-          "participation.eventName": eventName,
-        });
-        if (user2)
-          return NextResponse.json(
-            { error: `${members[i].email} already registered for this event` },
-            { status: 400 }
-          );
+        console.log(members[i].email)
+        if (members[i].email != "") {
+          const user2 = await User.findOne({
+            email: members[i].email,
+            participation: { $exists: true, $ne: [] },
+            "participation.eventName": eventName,
+          });
+          console.log(user2)
+          if (user2)
+            return NextResponse.json(
+              {
+                error: `${members[i].email} already registered for this event`,
+              },
+              { status: 400 }
+            );
+        }
       }
     }
 
     const newTeam = new Team({
       teamName,
       eventName,
-      leadId: _id,
+      leadId: id,
       members,
     });
 
     const savedTeam = await newTeam.save();
-
-    await User.findByIdAndUpdate(_id, {
+    console.log(savedTeam);
+    await User.findByIdAndUpdate(id, {
       $push: {
         participation: {
           eventName,
@@ -67,20 +72,22 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    const user3 = await User.findById(_id);
+    const user3 = await User.findById(id);
     console.log(user3);
 
     //send verification email
     if (members) {
       for (let i = 0; i < members.length; i++) {
-        await sendEmail({
-          email: members[i].email,
-          emailType: "INVITATION",
-          teamId: savedTeam._id,
-          teamName,
-          eventName,
-          userId: savedTeam.members[i]._id,
-        });
+        if (members[i].email) {
+          await sendEmail({
+            email: members[i].email,
+            emailType: "INVITATION",
+            teamId: savedTeam._id,
+            teamName,
+            eventName,
+            userId: savedTeam.members[i]._id,
+          });
+        }
       }
     }
 
