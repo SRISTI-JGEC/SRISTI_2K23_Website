@@ -25,7 +25,7 @@ export default function VerifyEmailPage() {
     const urlToken = window.location.search.split("=")[1];
     console.log(urlToken);
     setToken(urlToken || "");
-  }, []);
+  }, []); 
 
   useEffect(() => {
     if (token.length > 0) {

@@ -6,7 +6,7 @@ const Priciple = () => {
   return (
     <div className="min-h-screen w-full p-2 flex flex-col">
       <div className="p-[10px] flex flex-col items-center">
-        <div className="font-griffy text-[2.5rem] text-white tracking-wider mt-12 max-sm:text-[1.6rem] ">
+        <div className="font-griffy text-[2.5rem] text-white tracking-wider max-sm:text-[1.6rem] ">
           From Priciples Desk
         </div>
         <Image
@@ -24,7 +24,7 @@ const Priciple = () => {
           width={150}
           className="object-contain mr-5 max-sm:hidden"
         />
-        <div className="font-griffy p-6 relative w-full min-h-full max-sm:w-full  bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
+        <div className=" font-poppins p-6 relative w-full min-h-full max-sm:w-full  bg-[rgba(0,0,0,0.5)] backdrop-blur-md shadow-md text-white rounded-md">
           <p>
             Today the world economy is experiencing an unprecedented change. At
             present India stands as world&apos;s fifth largest economic power. Indian
@@ -53,8 +53,8 @@ const Priciple = () => {
           </p>
           <br/>
           <h3 className="text-right">{"~ "}Dr. Amitava Ray</h3>
-          <h3 className="text-right">Principal</h3>
-          <h3 className="text-right">JGEC</h3>
+          <h3 className="text-right">Principal of JGEC</h3>
+           
         </div>
       </div>
     </div>

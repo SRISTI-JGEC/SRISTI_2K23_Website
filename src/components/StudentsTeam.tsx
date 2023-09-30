@@ -132,14 +132,14 @@ function StudentsTeam() {
         initial={{ opacity: 0, y: 75 }}
         animate={mainControls}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8"
+        className=" flex flex-col items-center text-2xl lg:text-4xl  text-[#ecebeb] py-4 pb-8 font-griffy"
       >
         Students Team
         <Image
           alt=""
-          height={200}
-          width={200}
-          className="w-36 lg:w-60"
+          height={300}
+          width={300}
+          className="max-sm:w-[13rem] "
           src={`/underline-wand.png`}
           draggable={false}
         />

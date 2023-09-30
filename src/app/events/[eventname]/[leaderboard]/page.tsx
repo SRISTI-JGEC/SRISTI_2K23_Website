@@ -18,7 +18,7 @@ const LeaderBoard = () => {
               className="w-[30rem] max-sm:w-[20rem]"
             />
           </div>
-          <div className="w-full h-auto flex flex-col justify-center items-center">
+          {/* <div className="w-full h-auto flex flex-col justify-center items-center">
             <div className="w-[20rem] min-h-[10rem] mx-auto flex flex-col items-center">
               <Image
                 src="/Images/1st.png"
@@ -114,6 +114,11 @@ const LeaderBoard = () => {
                 </div>
               </div>
             </div>
+          </div> */}
+          <div className="w-full h-[60vh] flex justify-center items-center">
+            <h1 className="text-2xl sm:text-4xl text-white font-griffy font-semibold capitalize">
+              stay tuned...........
+            </h1>
           </div>
         </div>
       </div>

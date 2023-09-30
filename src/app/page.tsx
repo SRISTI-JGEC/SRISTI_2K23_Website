@@ -57,7 +57,10 @@ export default function Home() {
           </div>
           <div className="text-white text-xl font-semibold  sm:text-4xl text-center  font-griffy">
             <h1>
-              <span className="font-bold text-3xl sm:text-5xl">NORTH BENGAL’S</span> biggest
+              <span className="font-bold text-3xl sm:text-5xl">
+                NORTH BENGAL’S
+              </span>{" "}
+              biggest
             </h1>
             <h1>Techno Management fest</h1>
           </div>
@@ -66,7 +69,7 @@ export default function Home() {
         <div className="w-full max-w-[1300px] mt-20 min-h-auto mx-auto p-4">
           <Heading header={"About"} />
           <div className="flex flex-col md:flex-row justify-between ">
-            <div className="flex flex-col">
+            <div className="flex flex-col max-sm:order-2" >
               <div className="sm:m-5 relative  flex justify-center items-center ">
                 <Image
                   src="/block.png"
@@ -92,6 +95,16 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+            <div className=" flex items-center  justify-center max-sm:order-1">
+              <Image
+                src="/Images/Sristi3.png"
+                alt="Sristi Logo"
+                width={400}
+                height={300}
+                draggable={false}
+                className="max-sm:w-[15rem] "
+              />
             </div>
           </div>
         </div>
