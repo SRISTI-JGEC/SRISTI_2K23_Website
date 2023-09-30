@@ -88,6 +88,8 @@ const Page = () => {
       route.push('/login');
     } catch (error) {
       // Show Error to user also
+      setLoading(false);
+      alert("user already exist or something went wrong")
       console.log(error);
     }
   };

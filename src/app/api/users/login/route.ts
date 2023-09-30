@@ -9,10 +9,10 @@ connect();
 export async function POST(request: NextRequest){
     try {
         const reqBody = await request.json();
+  
         const {email, password} = reqBody;
-
         //check if user exists
-        const user = await User.findOne({email});
+        const user = await User.findOne({ email });
         if(!user){
             return NextResponse.json({error: "User does not exist"}, {status: 400});
         }
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest){
         if(!validPassword){
             return NextResponse.json({error: "Invalid password"}, {status: 400});
         }
-        console.log(user);
+
         
         //create token data
         const tokenData = {
@@ -38,6 +38,7 @@ export async function POST(request: NextRequest){
         const response = NextResponse.json({
             message: "Login successful",
             success: true,
+            token
         })
         response.cookies.set("token", token, {
             httpOnly: true, 

@@ -14,11 +14,13 @@ export const sendEmail = async({email, emailType, userId, teamId, eventName, tea
         else if (emailType === "RESET"){ 
             await User.findByIdAndUpdate(userId, {forgotPasswordToken: hashedToken, forgotPasswordTokenExpiry: Date.now() + 3600000});
         } 
-        else if (emailType === "INVITATION"){
-            await Team.findOneAndUpdate({_id: teamId, "members._id" : userId}, {
+        else if (emailType === "INVITATION") {
+            console.log("invitation section")
+            const data=await Team.findOneAndUpdate({_id: teamId, "members._id" : userId}, {
                 "members.$.verifyToken" : hashedToken,
                 "members.$.verifyTokenExpiry" : Date.now() + 86400000
             });
+            console.log(data);
         }
         
         const link = `${process.env.DOMAIN}/${emailType === "VERIFY" ? "verifyEmail" : (emailType === "RESET") ? "forgotPassword" : "acceptInvitation"}?token=${hashedToken}`;

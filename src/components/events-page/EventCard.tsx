@@ -48,16 +48,16 @@ const EventCard = ({ props }: { props: EventCardProps }) => {
               <p className="md:mr-20 text-lg md:text-2xl capitalize">
                 {event.name}
               </p>
-              <Link href={event.link}>
-                <p
-                  className="group ml-5 relative inline-flex items-center justify-center px-4 sm:px-6 md:px-10 py-1 md:py-2 overflow-hidden font-mono font-medium 
+
+              <Link
+                href={event.link}
+                className="group ml-5 relative inline-flex items-center justify-center px-4 sm:px-6 md:px-10 py-1 md:py-2 overflow-hidden font-mono font-medium 
                         tracking-tighter text-white border border-white/75 rounded-lg group cursor-pointer"
-                >
-                  <span className=" max-sm:hidden absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
-                  <span className="relative sm:group-hover:text-black transition-all duration-75">
-                    Learn more
-                  </span>
-                </p>
+              >
+                <span className=" max-sm:hidden absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span className="relative sm:group-hover:text-black transition-all duration-75">
+                  Learn more
+                </span>
               </Link>
             </div>
           ))}
