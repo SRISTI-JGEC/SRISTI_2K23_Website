@@ -4,10 +4,10 @@ import Image from "next/image";
 const LeaderBoard = () => {
   return (
     <>
-      <div className="w-full min-h-screen  overflow-y-scroll bg-leaderboard_Image bg-no-repeat bg-cover">
+      <div className="w-full min-h-screen  overflow-y-scroll bg-leaderboard_Image bg-no-repeat bg-cover tracking-wider">
         <div className="w-full max-w-[1400px] mx-auto h-full p-8 py-16">
           <div className="flex flex-col items-center">
-            <h1 className="text-4xl sm:text-5xl font-semibold text-white capitalize ps-4 mt-12 font-griffy">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-white capitalize ps-4 mt-12">
               leader board
             </h1>
             <Image
@@ -116,7 +116,7 @@ const LeaderBoard = () => {
             </div>
           </div> */}
           <div className="w-full h-[60vh] flex justify-center items-center">
-            <h1 className="text-2xl sm:text-4xl text-white font-griffy font-semibold capitalize">
+            <h1 className="text-2xl sm:text-4xl text-white font-semibold capitalize">
               stay tuned...........
             </h1>
           </div>

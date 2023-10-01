@@ -96,7 +96,7 @@ const Page = () => {
         <div className="min-h-screen">
           <div className="relative min-h-screen p-3 sm:p-10 flex justify-start items-center flex-col bg-center bg-cover bg-no-repeat">
             <div className=" flex flex-col items-center mb-4">
-              <div className="font-griffy capitalize text-4xl sm:text-5xl text-white mt-20  sm:mt-12 pb-2">
+              <div className=" capitalize text-4xl sm:text-5xl text-white mt-20  sm:mt-12 pb-2">
                 {eventData?.category}
               </div>
               <Image
@@ -120,7 +120,7 @@ const Page = () => {
                 />
               </div>
               <div className="relative min-h-[25rem] bg-rule-bg bg-no-repeat bg-cover bg-center w-[55%] min-w-[45%] flex flex-col items-center justify-start max-[640px]:w-[100%] max-[640px]:min-h-[20rem] py-2 max-sm:mt-6">
-                <div className="font-griffy text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem] ">
+                <div className=" text-[2.4rem] text-white tracking-widest max-[640px]:text-[1.5rem] ">
                   Rules
                 </div>
                 <Image
@@ -140,14 +140,14 @@ const Page = () => {
                 </ol>
               </div>
             </div>
-            <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
+            <div className="actions flex justify-between w-[50rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
               <Link href={eventData ? eventData.register : ""}>
-                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white  text-[1.5rem] tracking-wider">
                   Register Now
                 </button>
               </Link>
               <Link href={eventData ? eventData.pptLink : ""}>
-                <button className="capitalize py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="capitalize py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white  text-[1.5rem] tracking-wider">
                   download PPT
                 </button>
               </Link>
@@ -155,7 +155,7 @@ const Page = () => {
           </div>
           <div className=" min-h-screen p-4 sm:p-10 flex justify-center items-center flex-col bg-center bg-cover bg-no-repeat">
             <div className=" flex flex-col items-center">
-              <div className="font-griffy capitalize text-3xl sm:text-4xl text-white  pb-2 font-medium">
+              <div className=" capitalize text-3xl sm:text-4xl text-white  pb-2 font-medium">
                 Event members
               </div>
               <Image
@@ -184,7 +184,7 @@ const Page = () => {
                         />
                       </div>
                       <div className="leader-details bg-[rgba(0,0,0,0.4)] w-[80%] ml-[10px] min-h-[120px] rounded-[10px] backdrop-blur-[10px] p-3 max-[640px]:w-full">
-                        <div className="text-white font-poppins px-4 sm:mx-24 py-2 sm:w-[60%]">
+                        <div className="text-white px-4 sm:mx-24 py-2 sm:w-[60%]">
                           <h1 className="capitalize text-lg sm:text-2xl  ">
                             {items.name}
                           </h1>
@@ -205,18 +205,18 @@ const Page = () => {
             </div>
           </div>
           <div className="event-timing min-h-[5rem] flex flex-col items-center justify-start w-full text-white p-4 sm:p-10 bg-center bg-cover bg-no-repeat">
-            <h2 className="text-[3rem] font-griffy max-[640px]:text-2xl max-[280px]:text-[1rem] py-4 capitalize">
+            <h2 className="text-[3rem]  max-[640px]:text-2xl max-[280px]:text-[1rem] py-4 capitalize">
               Venue: {eventData?.venue}
             </h2>
             {eventData?.prelimsDate ? (
-              <h3 className="text-gray-200 text-xl sm:text-4xl font-griffy font-medium my-3">
+              <h3 className="text-gray-200 text-xl sm:text-4xl  font-medium my-3">
                 <span className="text-white">Prelims : </span>
                 {eventData?.prelimsDate}
               </h3>
             ) : (
               <></>
             )}
-            <div className="timer flex w-[50rem] justify-between sm:my-[3rem] items-center font-griffy max-[640px]:w-[90%]">
+            <div className="timer flex w-[50rem] justify-between sm:my-[3rem] items-center  max-[640px]:w-[90%]">
               <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
                 <p className="text-7xl max-[640px]:text-xl">{timeLeft.days}</p>
                 <span className="text-[24px] max-[640px]:text-[12px]">
@@ -249,17 +249,17 @@ const Page = () => {
                 </span>
               </div>
             </div>
-            <h1 className="text-gray-200 text-2xl sm:text-3xl font-griffy font-medium my-3">
+            <h1 className="text-gray-200 text-2xl sm:text-3xl  font-medium my-3">
               Be ready for the final round
             </h1>
-            <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
+            <div className="actions flex justify-between w-[50rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
               <Link href={eventData ? eventData.register : ""}>
-                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white  text-[1.5rem] tracking-wider">
                   Register Now
                 </button>
               </Link>
               <Link href={eventData ? eventData.leaderboard : "/"}>
-                <button className="py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white  text-[1.5rem] tracking-wider">
                   Leader Board
                 </button>
               </Link>

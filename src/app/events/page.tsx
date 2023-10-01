@@ -76,10 +76,10 @@ const techeEvents = [
 const page = () => {
   return (
     <>
-      <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll  bg-no-repeat bg-cover">
+      <div className=" overflow-x-hidden h-screen w-full bg-leaderboard_Image overflow-y-scroll bg-no-repeat bg-cover">
         <motion.div className="relative text-white mb-2">
           <div className=" flex justify-center items-center flex-col mt-24">
-            <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold font-griffy">
+            <h1 className="capitalize text-5xl sm:text-6xl text-white font-semibold tracking-wider">
               Events
             </h1>
             <Image

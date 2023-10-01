@@ -36,7 +36,7 @@ const EventCard = ({ props }: { props: EventCardProps }) => {
         className="md:w-full bg-black/40 hover:bg-black/50 transition-all duration-150 
             hover:backdrop-blur-sm  md:min-h-[16rem] rounded-md p-5 md:p-3 md:px-36 border border-transparent "
       >
-        <p className="text-2xl sm:text-4xl text-center md:text-start font-semibold  ps-4 capitalize text-yellow-100 font-griffy">
+        <p className="text-4xl sm:text-5xl text-center md:text-start font-semibold  ps-4 capitalize text-yellow-100 tracking-wider">
           {props.category} :
         </p>
         <>
@@ -45,16 +45,16 @@ const EventCard = ({ props }: { props: EventCardProps }) => {
               key={index}
               className="flex my-4 md:mx-56 w-full md:w-2/3 justify-between items-center"
             >
-              <p className="md:mr-20 text-lg md:text-2xl capitalize">
+              <p className="md:mr-20 text-lg md:text-3xl capitalize tracking-wider">
                 {event.name}
               </p>
 
               <Link
                 href={event.link}
-                className="group ml-5 relative inline-flex items-center justify-center px-4 sm:px-6 md:px-10 py-1 md:py-2 overflow-hidden font-mono font-medium 
-                        tracking-tighter text-white border border-white/75 rounded-lg group cursor-pointer"
+                className="group ml-5 relative inline-flex items-center justify-center px-4 sm:px-6 md:px-10 py-1 md:py-2 overflow-hidden font-medium 
+                        tracking-wide text-white border border-white/75 rounded-lg group cursor-pointer text-xl"
               >
-                <span className=" max-sm:hidden absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span className="max-sm:hidden absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"></span>
                 <span className="relative sm:group-hover:text-black transition-all duration-75">
                   Learn more
                 </span>

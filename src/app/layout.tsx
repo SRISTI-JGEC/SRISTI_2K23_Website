@@ -1,10 +1,10 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Music from "@/components/Music";
 
-const inter = Inter({ subsets: ["latin"] });
+const HarryFont = localFont({ src: "/HarryP.ttf" });
 
 export const metadata: Metadata = {
   title: "SRISTI 2023 Website",
@@ -21,8 +21,7 @@ export default function RootLayout({
       <body>
         {/* <Music /> */}
         <NavBar />
-        <div className={`${inter.className}`}>{children}</div>
-        
+        <div className={HarryFont.className}>{children}</div>
       </body>
     </html>
   );
