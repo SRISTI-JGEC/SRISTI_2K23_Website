@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Music from "@/components/Music";
 
-const HarryFont = localFont({ src: "./HarryP.ttf" });
+const HarryFont = localFont({ src: "./HARRYP__.ttf" });
 
 export const metadata: Metadata = {
   title: "SRISTI 2023 Website",
