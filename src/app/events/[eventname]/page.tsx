@@ -116,7 +116,7 @@ const Page = () => {
                   alt="event image"
                   width={300}
                   height={300}
-                  className="w-[30rem] relative object-cover"
+                  className="w-[30rem] relative "
                 />
               </div>
               <div className="relative min-h-[25rem] bg-rule-bg bg-no-repeat bg-cover bg-center w-[55%] min-w-[45%] flex flex-col items-center justify-start max-[640px]:w-[100%] max-[640px]:min-h-[20rem] py-2 max-sm:mt-6">

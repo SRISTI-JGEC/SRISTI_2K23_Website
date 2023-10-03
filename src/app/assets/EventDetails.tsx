@@ -51,15 +51,15 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "/Events/maze.jpg",
     venue: "Auditorium hall",
-    prelimsDate: "6th Oct, 10PM-12AM",
-    time: "Oct 7, 2023 24:00:00",
+    prelimsDate: "",
+    time: "Oct 7, 2023 19:00:00",
     pptLink:
       "https://drive.google.com/file/d/1b-xxfkL9Yk8zabG41OkqxTf-y7sAZfux/view?usp=sharing",
-    register: "/events/mazemarize/register",
+    register: "https://forms.gle/ZeFanpXv4ZhBaVgf8",
     leaderboard: "/events/mazemarize/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [3500, 2250, 1250],
   },
   {
     id: 2,
@@ -111,16 +111,16 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "https://www.technoxian.com/wp-content/uploads/2020/06/robosoccer.png",
     venue: "auditorium hall",
     prelimsDate: "",
-    time: "Oct 8, 2023 22:00:00",
+    time: "Oct 8, 2023 19:00:00",
     pptLink:
       "https://drive.google.com/file/d/192YqtoNW_N1_MhE7VSd7AyCJh-DTzlu2/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSdJBapHllqv98muNTmzSWVsiTek_zr17g062W2H6Nu0mpFGpA/viewform",
     leaderboard: "/events/roboSoccer/leaderboard",
-    prizes: [8000, 5000, 3000],
+    prizes: [3500, 2250, 1250],
   },
   {
     id: 3,
@@ -178,14 +178,14 @@ export const EventList: EventData[] = [
     ],
     img: "/Events/8.png",
     venue: "oval ground",
-    prelimsDate: "6th Oct, 2PM - 4PM",
-    time: "Oct 7, 2023 15:30:00",
+    prelimsDate: "6th Oct, 12PM - 2PM",
+    time: "Oct 7, 2023 9:00:00",
     pptLink:
       "https://drive.google.com/file/d/1DEnBvZuRzEzKAa4OaBaIm_gc9bN478OO/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSfgX1ZRIRc2So39RrmN9l4jjLRZ4qlgkQII3YFnDkMfG_B3BA/viewform",
     leaderboard: "/events/sputnik/leaderboard",
-    prizes: [5000, 3000, 2000],
+    prizes: [2000, 1500, 1000],
   },
   {
     id: 4,
@@ -237,13 +237,13 @@ export const EventList: EventData[] = [
     ],
     img: "/Events/1.png",
     venue: "auditorium hall",
-    prelimsDate: "",
-    time: "Oct 5, 2023 23:30:00",
+    prelimsDate: "5th Oct, 7pm",
+    time: "Oct 5, 2023 19:00:00",
     pptLink:
       "https://drive.google.com/file/d/1iEDh3BiDPzbizGnIvBBzAeZarxPzW4WY/view?usp=sharing",
     register: "https://forms.gle/WirGziPnbCGd6bWLA",
     leaderboard: "/events/rotolare/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [3500, 2250, 1250],
   },
   {
     id: 5,
@@ -298,13 +298,13 @@ export const EventList: EventData[] = [
     ],
     img: "/Events/2.png",
     venue: "auditorium hall",
-    prelimsDate: "5th Oct, 8PM - 8.45PM",
-    time: "Oct 6, 2023 24:00:00",
+    prelimsDate: "6th Oct, 7PM",
+    time: "Oct 6, 2023 19:00:00",
     pptLink:
       "https://drive.google.com/file/d/1UzfRqsqOrd8rTvgVWeVCHyjfs1BCio5X/view?usp=sharing",
     register: "https://forms.gle/Auv7pGExGwMQdQab6",
     leaderboard: "/events/bridgeTheGap/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1500, 1200, 1000],
   },
   {
     id: 6,
@@ -353,24 +353,20 @@ export const EventList: EventData[] = [
       },
     ],
     img: "/Events/3.png",
-    venue: "DR1 Room",
-    prelimsDate: "5th Oct, 7PM - 8PM",
-    time: "Oct 6, 2023 16:00:00",
+    venue: "DR1/DR2 Room",
+    prelimsDate: "5th Oct, 6PM - 7PM",
+    time: "Oct 6, 2023 10:00:00",
     pptLink:
       "https://drive.google.com/file/d/16LrO_FTY6tp8pOksdoLFEqQmVPLL34bg/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSfiAtEh0SPzFReS1dqKsddrznC9Do3ZtKAxHQi2pu1Zz9mG0A/viewform",
     leaderboard: "/events/codeChronicles/leaderboard",
-    prizes: [1723, 1024, 576],
+    prizes: [2000, 1500, 1000],
   },
   {
     id: 7,
     category: "cssBattle",
-    rules: [
-      "sdafsdfsdafasdflasdjkhfasdfhasdhjkflsadfhasdffas sdffasdfasdf dsafasdfasfasd afasdfsdafsda asdfasf",
-      "dsfsdhjkfasdhfs sdafasf fasdfsdaf sdffasdfsd a sdffasdf  fddsaf ffds asdffasd",
-      "dasfd sdfasdfds  sdfasdf  sdfafsdf asdffsdf  sdffads",
-    ],
+    rules: [""],
     name: "css Battle",
     eventCoordinators: [
       {
@@ -407,14 +403,15 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
-    venue: "DR1 Room",
+    img: "https://camo.githubusercontent.com/4a7ae78825f0277553a1899f8c293480f07ee55d149cf350b3140a3cca3d5619/68747470733a2f2f63646e2d6d656469612d312e66726565636f646563616d702e6f72672f696d616765732f312a794467534a725650504837304a6468364b55796f6b412e706e67",
+    venue: "DR1/DR2 Room",
     prelimsDate: "8th Oct, 5PM - 7PM",
     time: "Oct 8, 2023 19:00:00",
     pptLink: "",
-    register: "",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeFCgBZ5D7ujVWQYiEYQ5Gei04fsW7uHzGTXXJg3qOrfFJ5vQ/viewform",
     leaderboard: "/events/cssBattle/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1000, 700, 500],
   },
   {
     id: 8,
@@ -460,7 +457,7 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "/Events/ctf.jpeg",
     venue: "auditorium hall",
     prelimsDate: "",
     time: "Oct 7, 2023 24:00:00",
@@ -468,7 +465,7 @@ export const EventList: EventData[] = [
       "https://drive.google.com/file/d/1qXRUwWrtW9Jf7awrhqHr26Hh0S_p9uUB/view?usp=sharing",
     register: "",
     leaderboard: "/events/captureTheFlag/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1000, 700, 500],
   },
   {
     id: 9,
@@ -515,7 +512,7 @@ export const EventList: EventData[] = [
       },
     ],
     img: "/Events/9.png",
-    venue: "english lab Room",
+    venue: "Auditorium hall",
     prelimsDate: "",
     time: "Oct 8, 2023 14:00:00",
     pptLink:
@@ -523,7 +520,7 @@ export const EventList: EventData[] = [
     register:
       "https://docs.google.com/forms/d/1DNZO4Ifvf5qkEZNg-qlOw_NT7NrtuduSNqHOWJUYDco/edit?chromeless=1",
     leaderboard: "/events/sharkTankJolu/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [5000, 3000, 2000],
   },
 
   {
@@ -571,8 +568,8 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
-    venue: "english lab Room",
+    img: "/Events/gmun.png",
+    venue: "auditorium/ DR1",
     prelimsDate: "",
     time: "Oct 7, 2023 18:00:00",
     pptLink:
@@ -580,7 +577,7 @@ export const EventList: EventData[] = [
     register:
       "https://docs.google.com/forms/d/1YCtk4oJHtkuXr3U3wi5WXFtkoyWf6zyGUXNeDv56trs/viewform?edit_requested=true",
     leaderboard: "/events/modelParliament/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1000, 800, 800],
   },
   {
     id: 11,
@@ -627,8 +624,8 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
-    venue: "english lab Room",
+    img: "https://jenfi.com/wp-content/uploads/2022/01/Blog_CaseStudy-1024x683-1.png",
+    venue: "auditorium/ DR1",
     prelimsDate: "",
     time: "Oct 7, 2023 14:00:00",
     pptLink:
@@ -636,7 +633,7 @@ export const EventList: EventData[] = [
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSeOrWximulh3ROzrd06OFXeQomA-oH9nySY5GbgOdQLcshGUA/formrestricted",
     leaderboard: "/events/caseStudy/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [4000, 2000, 1000],
   },
   {
     id: 12,
@@ -679,7 +676,7 @@ export const EventList: EventData[] = [
       },
     ],
     img: "/Events/6.png",
-    venue: "english lab Room",
+    venue: "auditorium/ DR1",
     prelimsDate: "5th Oct, 10.30PM - 11.30PM",
     time: "Oct 6, 2023 18:00:00",
     pptLink:
@@ -749,9 +746,10 @@ export const EventList: EventData[] = [
     time: "Oct 8, 2023 10:00:00",
     pptLink:
       "https://drive.google.com/file/d/1GXF9JWx4syM9TNoc06fffgacuKwkP9D8/view?usp=sharing",
-    register: "",
+    register:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe7QvWTdGsjGIlNBu-RHBTYXjmWtkC2Pqxyy4-ba1CGmaA27A/viewform",
     leaderboard: "/events/techzibition/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [10000, 8000, 6000],
   },
   {
     id: 15,
@@ -796,7 +794,7 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/11.png",
+    img: "https://i.ytimg.com/vi/eBUWqcuu58c/maxresdefault.jpg",
     venue: "english lab Room",
     prelimsDate: "6th Oct, 10AM - 12PM",
     time: "Oct 7, 2023 10:00:00",
@@ -804,7 +802,7 @@ export const EventList: EventData[] = [
       "https://drive.google.com/file/d/1xYx1GBLbNNILyStQ4jvnkjZP9ERuhh9N/view?usp=sharing",
     register: "",
     leaderboard: "/events/techQuiz/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1200, 900, 600],
   },
   {
     id: 16,
@@ -849,7 +847,7 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ1-WioQmAIUTMWFT1m_pmROJ584539OTAeg&usqp=CAU",
     venue: "DR1 Room",
     prelimsDate: "6th Oct, 12PM - 1PM",
     time: "Oct 8, 2023 19:00:00",
@@ -857,7 +855,7 @@ export const EventList: EventData[] = [
       "https://drive.google.com/file/d/17t4OZolTCwfANCE_34EI5wuJNZhI-Jls/view?usp=sharing",
     register: "",
     leaderboard: "/events/chess/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1000, 700, 500],
   },
   {
     id: 17,
@@ -906,15 +904,15 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQDSnc-iuvk-irrHgXTdSA1wpcLDdyqezMeg&usqp=CAU",
     venue: "Auditorium hall",
     prelimsDate: "On going",
     time: "Oct 7, 2023 24:00:00",
     pptLink:
       "https://drive.google.com/file/d/1gPP8G9yQPufk9glAKHyTA89qW3yePBzV/view?usp=sharing",
-    register: "/events/mathemania/register",
+    register: "",
     leaderboard: "/events/mathemania/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1000, 700, 500],
   },
   {
     id: 18,
@@ -960,14 +958,14 @@ export const EventList: EventData[] = [
         isReverse: false,
       },
     ],
-    img: "/Events/6.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTET5oftvoAbOHPp5DCtK9fAPSvqAGVHJ4qew&usqp=CAU",
     venue: "auditorium hall",
     prelimsDate: "5th Oct, 9.45PM - 10.30PM",
     time: "Oct 5, 2023 22:30:00",
     pptLink:
       "https://drive.google.com/file/d/1vd3NEa__WbQ9I5Vs0hbS8JgvtljdVsJN/view?usp=sharing",
-    register: "",
+    register: "https://forms.gle/wwNxA1pdGqiJsz1s9",
     leaderboard: "/events/codeHunt/leaderboard",
-    prizes: [5000, 2000, 1000],
+    prizes: [1500, 1200, 1000],
   },
 ];
