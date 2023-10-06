@@ -1,4 +1,4 @@
-import {  EventData } from "../events/[eventname]/page";
+import { EventData } from "../events/[eventname]/page";
 
 export const EventList: EventData[] = [
   {
@@ -366,7 +366,12 @@ export const EventList: EventData[] = [
   {
     id: 7,
     category: "cssBattle",
-    rules: [""],
+    rules: [
+      "all Āiven desiĀns will be in .pnĀ ÿormat (400x300).",
+      "participants will have to recreate the desiĀns as accurately as they possibly can.",
+      "participants can assume that their desiĀns will be run on 400x300 browser windows, ",
+      "after they successÿully do so, they will need to minimize their html code to minimum possible characters.",
+    ],
     name: "css Battle",
     eventCoordinators: [
       {
@@ -392,14 +397,14 @@ export const EventList: EventData[] = [
         isReverse: true,
       },
       {
-        name: "Aishik Patra",
+        name: "Sayan Majumder ",
         imgSrc:
-          "https://drive.google.com/uc?export=view&id=1dBRD3ZqFctLiDvMcldg11k1Jnr8xVj88",
+          "https://drive.google.com/uc?export=view&id=1uTs_hA2VSL49LcgXWvPS1i4MBJI-HGHD",
         position: "event coordinator",
-        phone: "7602989174",
-        dept: "IT",
+        phone: "9875699506",
+        dept: "CSE",
         year: "3rd",
-        email: "ap2557@it.jgec.ac.in",
+        email: "sayanmajumder0002@gmail.com",
         isReverse: false,
       },
     ],
@@ -407,7 +412,8 @@ export const EventList: EventData[] = [
     venue: "DR1/DR2 Room",
     prelimsDate: "8th Oct, 5PM - 7PM",
     time: "Oct 8, 2023 19:00:00",
-    pptLink: "",
+    pptLink:
+      "https://drive.google.com/file/d/1alqwN_B3CbDelxhkqjGSQaABsYl79vvZ/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSeFCgBZ5D7ujVWQYiEYQ5Gei04fsW7uHzGTXXJg3qOrfFJ5vQ/viewform",
     leaderboard: "/events/cssBattle/leaderboard",

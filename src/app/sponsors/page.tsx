@@ -15,10 +15,10 @@ const Page = () => {
         draggable={false}
       />
       <div className="min-h-[90vh] w-full flex flex-col justify-start py-24 font-griffy">
-        <div className="min-h-screen w-full flex flex-col justify-start items-center">
-          <div className="p-[10px] flex flex-col items-start px-8 justify-start">
-            <div className="font-griffy text-[2.7rem] text-white tracking-wider max-sm:text-[2rem]">
-              Sponsorship Plans
+        <div className=" w-full flex flex-col justify-start items-center">
+          <div className="p-[10px] flex flex-col items-center px-8 justify-center">
+            <div className="font-griffy text-[2.7rem] text-white tracking-wider max-sm:text-[2rem] ">
+              Sponsors
             </div>
             <Image
               src={stick}
@@ -27,7 +27,7 @@ const Page = () => {
               draggable={false}
             />
           </div>
-          <div className="flex justify-center items-center mt-5">
+          {/* <div className="flex justify-center items-center mt-5">
             <p className="w-3/4 bg-cover bg-center p-3 backdrop-blur-md text-[#f5f5f5] bg-rule-bg bg-no-repeat min-h-[400px] max-sm:w-[90%] text-md">
               Dear Esteemed Sponsors,
               <br />
@@ -69,12 +69,12 @@ const Page = () => {
               <br />
               Sristi Organizing Committee
             </p>
-          </div>
+          </div> */}
           <div className="text-right w-full flex justify-end items-end mt-5 bg-[linear-gradient(90deg,transparent,#232323)] text-white">
-            <p className="w-2/4 p-2 max-sm:w-full">
+            {/* <p className="w-2/4 p-2 max-sm:w-full">
               *Deliverables are subject to negotiation. Interested sponsors may
               contact to us directly for any queries regarding deliverables.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="min-h-screen w-full flex flex-col p-2 ">
@@ -82,43 +82,28 @@ const Page = () => {
             <div className="w-3/4 flex justify-end p-5 bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white items-start max-sm:w-full min-h-full">
               <div className="relative flex flex-col justify-start items-start w-[80%] max-sm:w-full">
                 <div className="flex justify-between items-center w-full max-sm:flex-col max-sm:items-start max-sm:justify-start">
-                  <div className="px-[10px] flex flex-col items-start justify-start w-full max-sm:items-end">
-                    <div className="relative font-griffy text-[2rem] text-yellow-400 tracking-wider max-sm:text-[1.3rem]">
-                      Title Sponsor
+                  <div className="px-[10px] flex flex-col items-start justify-center w-full max-sm:items-end">
+                    <div className="sm:ps-8 relative font-griffy text-3xl text-yellow-400 tracking-wider max-sm:text-2xl text-center font-semibold max-sm:pe-4">
+                      Chaska
                     </div>
                     <Image
                       src={stick}
                       alt="stick"
-                      className="w-[16rem] my-[-10px] max-sm:w-[12rem] max-sm:my-[-5px]"
+                      className="w-[12rem] my-[-10px] max-sm:w-[8rem] max-sm:my-[-5px]"
                       draggable={false}
                     />
                   </div>
-                  <p className="text-5xl text-right w-full max-sm:text-3xl text-yellow-400 max-sm:pl-2 max-sm:pt-2">
+                  {/* <p className="text-5xl text-right w-full max-sm:text-3xl text-yellow-400 max-sm:pl-2 max-sm:pt-2">
                     {"₹"}75,000
-                  </p>
+                  </p> */}
                 </div>
-                <div className="flex flex-col mt-6 min-h-full">
-                  {"- "}Online promotion of your Brand on Social Media Handles
-                  <br />
-                  {"- "}Promotion of Brand on print
-                  media/hoarding/flex/banners/boards/radio
-                  <br />
-                  {"- "}Spots with logo and name in the college premise.
-                  <br />
-                  {"- "}One stall arranged in the fest Arena in all content &
-                  marketing stunts
-                  <br />
-                  {"- "}Special Mention as TITLE SPONSOR in all content &
-                  marketing stunts
-                  <br />
-                  {"- "}Promotion of the Brand during the Pre-SRISTI Workshops &
-                  all Online/Offline Events
-                  <br />
-                  {"- "}Accommodation (Lodging & Fooding) for 1 person who may
-                  visit the Campus during SRISTI
-                  <br />
-                  {"- "}30 min slot of stage time for marketing and audience
-                  interaction. (At most 3)
+                <div className="flex justify-evenly mt-6 min-h-full max-sm:flex-col">
+                  <Image src={"/Images/chaska.jpg"} alt="images" width={300} height={300} />
+                  <div className="sm:ms-8 text-lg sm:text-2xl font-griffy max-sm:my-4">
+                    <p>
+                      MOB: <span>8101304665 / 8597636327</span>
+                    </p>
+                  </div>
                 </div>
               </div>
               <Image
@@ -130,7 +115,7 @@ const Page = () => {
               />
             </div>
           </div>
-          <div className="flex items-end justify-start w-full mt-20 ">
+          {/* <div className="flex items-end justify-start w-full mt-20 ">
             <div className="w-3/4 flex justify-start p-5 bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white items-start max-sm:w-full min-h-full">
               <div className="relative flex flex-col justify-start items-start w-[80%] max-sm:w-full">
                 <div className="flex justify-between items-center w-full max-sm:flex-col max-sm:items-start max-sm:justify-start">
@@ -294,7 +279,7 @@ const Page = () => {
               <br />
               {"- "}Posters and banners should be provided by firm
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
