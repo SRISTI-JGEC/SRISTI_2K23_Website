@@ -142,7 +142,7 @@ const Page = () => {
             </div>
             <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
               <Link href={eventData ? eventData.register : ""}>
-                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
                   Register Now
                 </button>
               </Link>
@@ -205,6 +205,55 @@ const Page = () => {
             </div>
           </div>
           <div className="event-timing min-h-[5rem] flex flex-col items-center justify-start w-full text-white p-4 sm:p-10 bg-center bg-cover bg-no-repeat">
+            <div className="w-full flex flex-col items-center">
+              <div className=" flex flex-col items-center">
+                <div className="font-griffy capitalize text-3xl sm:text-4xl text-white  pb-2 font-medium">
+                  Prizes
+                </div>
+                <Image
+                  src={stick}
+                  alt="stick"
+                  className="max-sm:w-[12rem] w-[15rem] my-[-8px] object-cover"
+                  draggable={false}
+                />
+              </div>
+              <div className="flex items-center mt-4">
+                <Image
+                  src={"/Events/1st.png"}
+                  width={80}
+                  height={80}
+                  alt="1st"
+                  className="max-sm:w-14"
+                />
+                <p className="text-2xl sm:text-4xl font-griffy font-semibold text-white ms-4">
+                  {eventData?.prizes[0]}
+                </p>
+              </div>
+              <div className="flex items-center">
+                <Image
+                  src={"/Events/2nd.png"}
+                  width={80}
+                  height={80}
+                  alt="1st"
+                  className="max-sm:w-14"
+                />
+                <p className="text-2xl sm:text-4xl font-griffy font-semibold text-white ms-4">
+                  {eventData?.prizes[1]}
+                </p>
+              </div>
+              <div className="flex items-center">
+                <Image
+                  src={"/Events/3rd.png"}
+                  width={80}
+                  height={80}
+                  alt="1st"
+                  className="max-sm:w-14"
+                />
+                <p className="text-2xl sm:text-4xl font-griffy font-semibold text-white ms-4">
+                  {eventData?.prizes[2]}
+                </p>
+              </div>
+            </div>
             <h2 className="text-[3rem] font-griffy max-[640px]:text-2xl max-[280px]:text-[1rem] py-4 capitalize">
               Venue: {eventData?.venue}
             </h2>
@@ -218,7 +267,9 @@ const Page = () => {
             )}
             <div className="timer flex w-[50rem] justify-between sm:my-[3rem] items-center font-griffy max-[640px]:w-[90%]">
               <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
-                <p className="text-7xl max-[640px]:text-xl">{timeLeft.days}</p>
+                <p className="text-7xl max-[640px]:text-xl">
+                  {timeLeft.days < 0 ? 0 : timeLeft.days}
+                </p>
                 <span className="text-[24px] max-[640px]:text-[12px]">
                   Days
                 </span>
@@ -226,7 +277,7 @@ const Page = () => {
               <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
                 <p className="text-7xl max-[640px]:text-xl">
                   {" "}
-                  {timeLeft.hours}
+                  {timeLeft.hours < 0 ? 0 : timeLeft.hours}
                 </p>
                 <span className="text-[24px] max-[640px]:text-[12px]">
                   Hours
@@ -234,7 +285,7 @@ const Page = () => {
               </div>
               <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
                 <p className="text-7xl max-[640px]:text-xl">
-                  {timeLeft.minutes}
+                  {timeLeft.minutes < 0 ? 0 : timeLeft.minutes}
                 </p>
                 <span className="text-[24px] max-[640px]:text-[12px]">
                   Minutes
@@ -242,7 +293,7 @@ const Page = () => {
               </div>
               <div className="days bg-[rgba(0,0,0,0.4)] w-16 sm:w-36 sm:h-32 flex flex-col h-16 p-2 items-center backdrop-blur-[10px]">
                 <p className="text-7xl max-[640px]:text-xl">
-                  {timeLeft.seconds}
+                  {timeLeft.seconds < 0 ? 0 : timeLeft.seconds}
                 </p>
                 <span className="text-[24px] max-[640px]:text-[12px] ">
                   Seconds
@@ -254,7 +305,7 @@ const Page = () => {
             </h1>
             <div className="actions flex justify-between w-[30rem] max-[640px]:w-[20rem] max-[280px]:w-[15rem] my-4 sm:my-8">
               <Link href={eventData ? eventData.register : ""}>
-                <button className="py-2 px-4 max-[640px]:py-[4px] max-[640px]:px-[8px] max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
+                <button className="py-2 px-4 max-[640px]:py-2 max-[640px]:px-4 max-[640px]:text-[1rem] bg-rule-bg bg-center bg-cover bg-no-repeat text-white font-griffy text-[1.5rem] tracking-wider">
                   Register Now
                 </button>
               </Link>
