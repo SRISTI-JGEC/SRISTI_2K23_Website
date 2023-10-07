@@ -47,7 +47,7 @@ const LeaderBoard = () => {
                 <div className="w-full min-h-24 rounded-lg bg-yellow-300 ">
                   <ul className="p-4">
                     <li className="text-xl font-semibold text-center mb-2">
-                      Team <span className="capitalize">{list.winners[0]}</span>
+                      <span className="capitalize">{list.winners[0]}</span>
                     </li>
                   </ul>
                 </div>
@@ -64,7 +64,6 @@ const LeaderBoard = () => {
                   <div className="w-full min-h-24 rounded-lg bg-gray-300 ">
                     <ul className="p-4">
                       <li className="text-xl font-semibold text-center mb-2">
-                        Team{" "}
                         <span className="capitalize">{list.winners[1]}</span>
                       </li>
                     </ul>
@@ -81,7 +80,6 @@ const LeaderBoard = () => {
                   <div className="w-full min-h-24 rounded-lg bg-[#E87A42] ">
                     <ul className="p-4">
                       <li className="text-xl font-semibold text-center mb-2">
-                        Team{" "}
                         <span className="capitalize">{list.winners[2]}</span>
                       </li>
                     </ul>
