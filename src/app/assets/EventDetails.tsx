@@ -583,7 +583,7 @@ export const EventList: EventData[] = [
       "https://drive.google.com/file/d/1a6c-_Uvjwsii23KC4kdM3k5HsPiN8ATB/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/1YCtk4oJHtkuXr3U3wi5WXFtkoyWf6zyGUXNeDv56trs/viewform?edit_requested=true",
-    leaderboard: "/events/modelParliament/modelParliament",
+    leaderboard: "/events/gmun/gmun",
     prizes: [1000, 800, 800],
   },
   {
@@ -639,7 +639,7 @@ export const EventList: EventData[] = [
       "https://drive.google.com/file/d/1ZY2s4x8eYrxQvw1MpMfqgJXmNRuH9EkS/view?usp=sharing",
     register:
       "https://docs.google.com/forms/d/e/1FAIpQLSeOrWximulh3ROzrd06OFXeQomA-oH9nySY5GbgOdQLcshGUA/formrestricted",
-    leaderboard: "/events/caseStudy/caseStudy",
+    leaderboard: "/events/intraRicerca/intraRicerca",
     prizes: [4000, 2000, 1000],
   },
   {

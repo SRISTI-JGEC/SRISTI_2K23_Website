@@ -18,12 +18,12 @@ export const leaderBoardList: leaderBoardType[] = [
   {
     id: 3,
     category: "sputnik",
-    winners: ["Pheonix", "Universe ", "Virus"],
+    winners: ["Team Pheonix", "Team Universe ", "Team Virus"],
   },
   {
     id: 4,
     category: "rotolare",
-    winners: ["Phoenix", "Slytherin Nurds", "Tandav"],
+    winners: ["Team Phoenix", "Team Slytherin Nurds", "Team Tandav"],
   },
   {
     id: 5,
