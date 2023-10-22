@@ -8,12 +8,20 @@ export const leaderBoardList: leaderBoardType[] = [
   {
     id: 1,
     category: "mazemarize",
-    winners: ["", "", ""],
+    winners: [
+      "Team FLYING DUTCH MAN",
+      "Team MAGIKTRONICS",
+      "Team MAZEMERIZER ",
+    ],
   },
   {
     id: 2,
     category: "roboSoccer",
-    winners: ["", "", ""],
+    winners: [
+      "Team MAGIKTRONICS",
+      "Team TECH PIRATES ",
+      "Team FLYING DUTCH MAN",
+    ],
   },
   {
     id: 3,
@@ -28,27 +36,27 @@ export const leaderBoardList: leaderBoardType[] = [
   {
     id: 5,
     category: "bridgeTheGap",
-    winners: ["", "", ""],
+    winners: ["Team Sparking V", "Team Virus", "Team Khatron ke khiladi"],
   },
   {
     id: 6,
     category: "codeChronicles",
-    winners: ["", "", ""],
+    winners: ["Mehedi Hasan", "Sohan RoyChowdhury", "Suman Bera"],
   },
   {
     id: 7,
     category: "cssBattle",
-    winners: ["", "", ""],
+    winners: ["Team Prudence", "Team Takshashakti", "Team Quantum"],
   },
   {
     id: 8,
     category: "captureTheFlag",
-    winners: ["", "", ""],
+    winners: ["Purbayan Kumar Das", "Adil Hossain Sana", ""],
   },
   {
     id: 9,
     category: "sharkTankJolu",
-    winners: ["", "", ""],
+    winners: ["team Treaksters", "team Matrix Hosts", "team  Tech Titans"],
   },
 
   {
@@ -59,12 +67,12 @@ export const leaderBoardList: leaderBoardType[] = [
   {
     id: 11,
     category: "intraRicerca",
-    winners: ["", "", ""],
+    winners: ["Team Prudence", "Team Takshashakti", "Team Quantum"],
   },
   {
     id: 12,
     category: "troubleshooter",
-    winners: ["", "", ""],
+    winners: ["Ankit Saha", "Sudiksha Basu Thakur", "Ankit Saha"],
   },
   {
     id: 13,
@@ -74,16 +82,20 @@ export const leaderBoardList: leaderBoardType[] = [
   {
     id: 15,
     category: "techQuiz",
-    winners: ["", "", ""],
+    winners: ["team Prudence", "team Sherlock Homeless", "team Tech Squad"],
   },
   {
     id: 17,
     category: "mathemania",
-    winners: ["", "", ""],
+    winners: ["Mehedi Hasan", "Soumyabrata Sinha", "Rajdip Pal"],
   },
   {
     id: 18,
     category: "codeHunt",
-    winners: ["", "", ""],
+    winners: [
+      "team Khatron ke Khiladi ",
+      "team Tarzaan ",
+      "team universe & Sparking V",
+    ],
   },
 ];
